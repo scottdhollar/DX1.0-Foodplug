@@ -1,0 +1,112 @@
+/* Page resets starts here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Page resets ends here*/
+
+.btn {
+    padding: 15px 20px;
+}
+
+.btn-white {
+    background: transparent;
+    /* border: 2px solid var(--main-color); */
+}
+
+.btn-white :hover {
+    color: var(--main-color);
+}
+
+.btn-red {
+    background: var(--main-color);
+    color: var(--white-color);
+}
+
+.btn-red:hover{
+    color: var(--main-color);
+    background: transparent;
+}
+
+/* Header section starts here */
+header {
+    /* border: 3px solid black; */
+}
+
+.nav-desktop {
+    /* border: 3px solid tomato; */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.desktop-logo {
+    position: absolute;
+    left: 60px;
+    top: 0;
+
+    width: 100px;
+    height: 100px;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: var(--white-color);
+}
+
+.desktop-link-holder {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-link-holder ul{
+    border: 3px solid tomato;
+    list-style: none;
+    display: flex;
+}    
+.desktop-link-holder ul a{
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 15px 20px;
+    display: block;
+    border: 2px solid transparent;
+}
+
+.desktop-link-holder ul a:hover{
+    /* border: 2px solid var(--main-color) */
+}
+
+.header-banner-section {
+
+    /* border: 3px solid black; */
+    min-height: 450px;
+    background: url(./img/banner.jpg);
+    background-size: cover;
+    padding-top: 130px;
+
+}
+
+.banner-content {
+    /* border: 3px solid red; */
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-text-container {
+    /* border: 3px solid purple; */
+    width: 50%;
+}
+
+.header-icons {
+    margin-left: 10px;
+}
+/* Header section ends here */
