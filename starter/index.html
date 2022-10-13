@@ -9,8 +9,22 @@
 <link rel="stylesheet" href="./fontawesome/css/all.css">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="defaults.css">
+<link rel="stylesheet" href="mobile.css">
 <body>
     <header>
+        <nav class="nav-mobile">
+            <div class="mobile-logo">
+                <div class="xbox" >
+                    <i class="fa-brands fa-xbox" onclick="dosomething()"></i>
+                </div>
+
+                <span> Foodplug </span>
+            </div>
+            <div class="hamburger" onclick="kaisen()">
+                <div class="menu"></div>
+            </div>
+        </nav>
+
         <nav class="nav-desktop">
             <div class="desktop-logo"> 
                 <i class="fa-brands fa-xbox"></i>
@@ -22,7 +36,7 @@
                     <li><a href=""> Explore Foods</a></li>
                     <li><a href=""> FAQ</a></li>
                 </ul>
-                <button class="btn btn-red">+1 (234) 714-1699</button>
+                <button class="btn btn-red" onclick="dosomething()">+1 (234) 714-1699</button>
             </div>
         </nav>
 
@@ -35,14 +49,38 @@
                         </h1>
                         <p>We offer 6 delicious pizzas, from basic cheese and basil pizza (€6) to our signature Classic pizzeria ('Taverne'). A variety of our speciality pizzerias offer great value money such as 'Pizzeria de la Nazionale', where we’ve created a new delicious pizza in the heart of Milan, and the ‘Madrone’ pizzeria, which offers all-day dining, with an Italian twist to the menu.
                         </p>
-                        <button class="btn btn-white">Learn more
+                        <button class="btn btn-white" onclick="dosomething()">Learn more
                             <i class="fa-solid fa-arrow-right"></i></button>
-                        <button class="btn btn-red">Order now
+                        <button class="btn btn-red" onclick="dosomething()">Order now
                             <i class="fa-solid fa-basket-shopping"></i></button>
                     </div>
 
             </div>
         </div>
+
+        <div class="header-counter-section">
+            <div class="counter">
+                <h2>1287+</h2>
+                <p>savings</p>
+            </div>
+            <div class="counter">
+                <h2>6428+</h2>
+                <p>photos</p>
+            </div>
+
+            <div class="counter">
+                <h2>1004+</h2>
+                <p>rockets</p>
+            </div>
+
+            <div class="counter">
+                <h2>2017+</h2>
+                <p>globes</p>
+            </div>   
+        </div>
     </header>
+
+
+    <script src="main.js"></script>
 </body>
 </html>
