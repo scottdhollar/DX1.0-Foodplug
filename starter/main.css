@@ -19,7 +19,7 @@ body {
 
 .btn {
     padding: 15px 20px;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 .btn-white {
@@ -67,11 +67,16 @@ body {
 }
 
 .xbox {
-    border: 3px solid var(--white-color);
+    /* border: 3px solid var(--white-color); */
     font-size: 25px;
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    transition: all 5s ease;
+}
+
+.xbox:hover {
+    transform: rotate(360deg);
 }
 
 .mobile-logo span {
@@ -88,6 +93,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease;
+}
+
+.hamburger:hover {
+    transform: rotate(360deg);
 }
 
 .menu {
@@ -169,7 +179,7 @@ body {
 .desktop-link-holder ul a{
     text-decoration: none;
     color: var(--main-color);
-    padding: 15px 20px;
+    padding: 13px 20px;
     display: block;
     border: 2px solid transparent;
 }

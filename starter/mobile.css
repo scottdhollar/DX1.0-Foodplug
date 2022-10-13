@@ -16,5 +16,15 @@
         padding-top: 0;
     }
 
+    .counter h2 {
+        font-size: 20px;
+    }
+    
+    .counter p {
+        text-transform: uppercase;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
 }
     
