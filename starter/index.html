@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="defaults.css">
 <link rel="stylesheet" href="mobile.css">
 <body>
+
+    <div class="backdrop" onclick="kaisen()"></div>
+
     <header>
         <nav class="nav-mobile">
             <div class="mobile-logo">
@@ -26,11 +29,22 @@
             <div class="hamburger" onclick="kaisen()">
                 <div class="menu"></div>
             </div>
+
+            <div class="mobile-link-holder">
+                <ul>
+                    <li><a href="" class="mobile-active-link"> Home</a></li>
+                    <li><a href=""> About Us</a></li>
+                    <li><a href=""> Explore Foods</a></li>
+                    <li><a href=""> FAQ</a></li>
+                </ul>
+                <a href="https://wa.me/message/SQWCD3JZAO36B1"><button class="btn">+1 (234) 714-1699</button></a>
+
+            </div>
         </nav>
 
         <nav class="nav-desktop">
             <div class="desktop-logo"> 
-                <i class="fa-brands fa-xbox"></i>
+                <i class="fa-brands fa-xbox" onclick="dosomething()"></i>
             </div>
             <div class="desktop-link-holder">
                 <ul>

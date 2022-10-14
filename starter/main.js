@@ -1,4 +1,4 @@
-alert("Foodplug will have maximum access to your call log, sms and notifications 😈")
+// alert("Foodplug will have maximum access to your call log, sms and notifications 😈")
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
 
@@ -14,11 +14,16 @@ function contactus() {
 }
 
 
-console.log(hamburgerdiv)
+// console.log(hamburgerdiv)
 
 var hamburgerdiv = document.querySelector(".hamburger")
+var mobileLinks = document.querySelector(".mobile-link-holder")
+var mybackdrop = document.querySelector(".backdrop")
 
 
 function kaisen() {
     hamburgerdiv.classList.toggle("showburger")
+    mobileLinks.classList.toggle("show-mobile-link-holder")
+    mybackdrop.classList.toggle("show-backdrop")
 }
+
