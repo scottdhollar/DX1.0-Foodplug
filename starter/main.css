@@ -215,7 +215,7 @@ body {
     border: 2px solid var(--white-color);
     color: var(--white-color);
     background: var(--main-color);
-    /* margin-left: 20px; */
+    font-size: 75%;
 }
 
 .nav-desktop {
