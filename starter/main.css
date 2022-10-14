@@ -226,8 +226,8 @@ body {
     top: 0;
     width: 100%;
     justify-content: flex-end;
-    background: rgba(255, 255, 255, 0.651);
-    backdrop-filter: blur(3px);
+    background: white;
+    /* backdrop-filter: blur(3px); */
     /* margin-bottom: 130px; */
 }
 
@@ -345,6 +345,38 @@ body {
     text-transform: uppercase;
     margin-top: 5px;
 }
+
+.dumb-videos {
+    margin: 5px;
+    padding: 10px;
+    border: 7px solid black;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    width:70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.dumb-videos h3 {
+    color: white;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+/* .stuff {
+    background: url(./img/food-eat.gif) rgba(165, 42, 42, 0.411) no-repeat center;
+    height:401px;
+    width: 50%;
+} */
 
 
 /* Header counter section ends here */
