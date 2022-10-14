@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="defaults.css">
 <link rel="stylesheet" href="mobile.css">
 <body>
+    <div id="preloader"></div>
 
     <div class="backdrop" onclick="kaisen()"></div>
 
@@ -99,5 +100,14 @@
 
 
     <script src="main.js"></script>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener ("load", function(){
+            loader.style.display = "none";
+        })
+    </script>
+
 </body>
 </html>
