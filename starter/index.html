@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="defaults.css">
 <link rel="stylesheet" href="mobile.css">
 <body>
+    <!-- preloader starts here -->
     <div id="preloader"></div>
 
     <div class="backdrop" onclick="kaisen()"></div>
@@ -21,8 +22,9 @@
     <header>
         <nav class="nav-mobile">
             <div class="mobile-logo">
-                <div class="xbox" >
-                    <i class="fa-brands fa-xbox" onclick="dosomething()"></i>
+                <div class="pizza" >
+                    <i class="fa-solid fa-pizza-slice" onclick="dosomething()"></i>
+                    <!-- <i class="fa-brands fa-xbox" onclick="dosomething()"></i> -->
                 </div>
 
                 <span> Foodplug </span>
@@ -44,8 +46,9 @@
         </nav>
 
         <nav class="nav-desktop">
-            <div class="desktop-logo"> 
-                <i class="fa-brands fa-xbox" onclick="dosomething()"></i>
+            <div class="pizza-desktop"> 
+                <i class="fa-solid fa-pizza-slice" onclick="dosomething()"></i>
+                <!-- <i class="fa-brands fa-xbox" ></i> -->
             </div>
             <div class="desktop-link-holder">
                 <ul>
@@ -97,10 +100,11 @@
             </div>   
         </div>
 
+
         <div class="mid">
             <div class="dumb-videos">
                 <h3> Check out our premium recipe</h3>
-                <iframe width="100%" height="405" src="https://www.youtube.com/embed/6AeJ_zmUbIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/6AeJ_zmUbIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="stuff">
                 
@@ -108,9 +112,56 @@
         </div>
     </header>
 
+    <main>
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image-holder">
+                    <img src="./img/about1.png" alt="A simple Italian recipe">
+                </div>
+                <div class="about-text-holder">
+                    <h2>We pride ourselves on <br /> making real food from the <br /> best products </h2>
+                    <p>
+                        9+ We also provide gluten free menu and desserts for those who are on the look out for something new. We are passionate about keeping the kitchen fresh and in tact, and are very hard working, always on time and making sure that the end-product is pleasing for everyone. Our menu is based on the best seasonal and imported ingredients.
+                    </p>
+                    <button class="btn btn-red" onclick="dosomething()">Learn more 
+                        <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-text-holder">
+                    <h2>We make everything by
+                        hand with the best possible
+                        ingredients.</h2>
+
+                    <p>We will show you what it's like to make it on the run with us, and we don't mind sharing a few too many laughs along the way!</p>
+                    <ul>
+                        <li> <i class="fa-solid fa-check check-icon about-us-icons"></i> Panzenella</li>
+                        <li> <i class="fa-solid fa-check check-icon about-us-icons"></i> Mushroom Risotto</li>
+                        <li> <i class="fa-solid fa-check check-icon about-us-icons"></i> Pasta Carbonara</li>
+                        <li> <i class="fa-solid fa-check check-icon about-us-icons"></i> Caprese Salad with Pesto Sauce</li>
+                    </ul>
+                    <button class="btn btn-red" onclick="dosomething()">Learn more 
+                        <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="about-image-holder">
+                    <img src="./img/about2.png" alt="4 Simple Italian recipes">
+                </div>
+
+                <div class="about-banner-section">
+                    <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+                    <p>We bring you what you always wanted, and the best in authentic Italian food – with a menu that ranges from starters, lasagna, fresh pasta, pizzas, risotto, antipasti, pasta e fettuccini, and so much more. We don’t just serve food, but we do an amazing job at making it special. We don’t just provide unique food, we think about your dining experience.</p>
+                    <button><i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
 
     <script src="main.js"></script>
 
+    <!-- preloader continues -->
     <script>
         var loader = document.getElementById("preloader");
 

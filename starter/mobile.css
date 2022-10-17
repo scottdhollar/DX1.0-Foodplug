@@ -28,9 +28,9 @@
     }
 
     .header-banner-section {
-        padding: 80px 0 30px 0;
+        padding: 20px 0 30px 0;
         background-position: center;
-    
+        
     }
 
     .mid {
@@ -43,8 +43,27 @@
         width: 90%;
         justify-content: center;
         align-items: center;
+        /* height: 40%; */
     }
     
+
+
+    
+
+.about-container{
+    justify-content: center;
+}
+.about-image-holder{
+    min-width: 100%;
+}
+.about-text-holder{
+    min-width: 95%;
+    margin: 20px 0;
+}
+
+.about-banner-section{
+    height: 65vh;
+}
 
 }
     
