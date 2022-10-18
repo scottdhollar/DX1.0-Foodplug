@@ -78,6 +78,7 @@
 
 .faq-items {
     width: 90%;
+    align-items: center;
 }
 
 /* .faq-items p{
