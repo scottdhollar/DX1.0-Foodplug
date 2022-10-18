@@ -77,9 +77,10 @@
 }
 
 .faq-items {
-    width: 90%;
+    width: 100%;
     align-items: center;
     margin: 5px auto;
+
 }
 
 /* .faq-items p{
