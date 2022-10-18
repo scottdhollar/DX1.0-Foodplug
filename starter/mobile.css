@@ -75,6 +75,10 @@
     width: 90%;
 }
 
+.faq-items p{
+    width: 100%;
+}
+
 .gototop {
     opacity: 0.5;
     /* display: none; */
