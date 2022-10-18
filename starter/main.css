@@ -583,10 +583,10 @@ body {
     /* text-align: left; */
 }
 
-/* .faq{
-    width: 90%;
-    margin: 0 auto;
-    padding: 30px 5px;
+.faq{
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 30px;
 }
 
 .faq h2 {
@@ -596,6 +596,7 @@ body {
 
 .faq-items-title {
     margin: 10px 0;
+    text-align: center;
     display: block;
     font-weight: bolder;
     font-size: 20px;
@@ -613,10 +614,10 @@ body {
 
 .faq-items {
     width: 49%;
-    min-width: 350px;
-    margin: 15px 0;
+    min-width: 300px;
+    margin: 15px;
 
-} */
+}
 
 
 /* .faq-container{
