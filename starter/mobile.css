@@ -71,6 +71,9 @@
     margin: 20px 0;
 }
 
+.faq-items {
+    width: 100%;
+}
 
 .gototop {
     opacity: 0.5;
