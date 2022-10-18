@@ -64,8 +64,12 @@
 }
 
 .about-banner-section{
-    height: 40%;
+    height: 35%;
     margin-bottom: 90px;
+}
+
+.about-banner-section button{
+    display: none;
 }
 
 .explorefoods-card {
