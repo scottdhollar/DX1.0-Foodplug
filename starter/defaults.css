@@ -25,3 +25,17 @@
         box-shadow: 0 0 0 20 #a82d49, 0 0 0 40 #a82d49;
     }
 }
+
+@keyframes ripplr {
+    0% {
+        box-shadow: 0 0 0 0 #a82d2d, 0 0 0 0 #a82d2d;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0), 0 0 0 40px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20 #2d5aa8, 0 0 0 40 #2d4ea8;
+    }
+}

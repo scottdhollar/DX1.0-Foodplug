@@ -37,10 +37,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 50vh;
     }
 
     .dumb-videos {
         width: 90%;
+        height: 100%;
         justify-content: center;
         align-items: center;
         /* height: 40%; */
@@ -65,5 +67,39 @@
     height: 65vh;
 }
 
+.explorefoods-card {
+    margin: 20px 0;
 }
+
+
+.gototop {
+    opacity: 0.5;
+    /* display: none; */
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.682);
+    /* color: var(#fff)!important; */
+    background: var(--main-color);
+    /* color: #fff; */
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0.8; */
+    border-radius: 150px;
+    text-align: center;
+    /* font-size: 40px; */
+    animation: ripple 3s infinite;
+    backdrop-filter: blur(6px);
+}
+}
+
+
+/* 
+.icon{
+    display: flex;
+    text-decoration: none;
+} */
     

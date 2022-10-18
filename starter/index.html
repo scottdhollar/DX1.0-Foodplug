@@ -20,7 +20,7 @@
     <div class="backdrop" onclick="kaisen()"></div>
 
     <header>
-        <nav class="nav-mobile">
+        <nav class="nav-mobile" id="home">
             <div class="mobile-logo">
                 <div class="pizza" >
                     <i class="fa-solid fa-pizza-slice" onclick="dosomething()"></i>
@@ -35,9 +35,9 @@
 
             <div class="mobile-link-holder">
                 <ul>
-                    <li><a href="" class="mobile-active-link"> Home</a></li>
-                    <li><a href=""> About Us</a></li>
-                    <li><a href=""> Explore Foods</a></li>
+                    <li><a href="#home" class="mobile-active-link"> Home</a></li>
+                    <li><a href="#aboutus"> About Us</a></li>
+                    <li><a href="#explorefoods"> Explore Foods</a></li>
                     <li><a href=""> FAQ</a></li>
                 </ul>
                 <a href="https://wa.me/message/SQWCD3JZAO36B1"><button class="btn">+1 (234) 714-1699</button></a>
@@ -45,16 +45,16 @@
             </div>
         </nav>
 
-        <nav class="nav-desktop">
+        <nav class="nav-desktop" id="home">
             <div class="pizza-desktop"> 
                 <i class="fa-solid fa-pizza-slice" onclick="dosomething()"></i>
                 <!-- <i class="fa-brands fa-xbox" ></i> -->
             </div>
             <div class="desktop-link-holder">
                 <ul>
-                    <li><a href=""> Home</a></li>
-                    <li><a href=""> About Us</a></li>
-                    <li><a href=""> Explore Foods</a></li>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#aboutus"> About Us</a></li>
+                    <li><a href="#explorefoods"> Explore Foods</a></li>
                     <li><a href=""> FAQ</a></li>
                 </ul>
                 <a href="https://wa.me/message/SQWCD3JZAO36B1"><button class="btn btn-red">+1 (234) 714-1699</button></a>
@@ -101,19 +101,12 @@
         </div>
 
 
-        <div class="mid">
-            <div class="dumb-videos">
-                <h3> Check out our premium recipe</h3>
-                <iframe width="100%" height="500vh" src="https://www.youtube.com/embed/6AeJ_zmUbIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="stuff">
-                
-            </div>
+        
         </div>
     </header>
 
     <main>
-        <section class="about-section">
+        <section class="about-section" id="aboutus">
             <div class="about-container">
                 <div class="about-image-holder">
                     <img src="./img/about1.png" alt="A simple Italian recipe">
@@ -156,6 +149,76 @@
 
 
         </section>
+
+        <section class="explorefoods" id="explorefoods">
+            <h2>Explore our Foods</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et saepe, error voluptate possimus qui tempora tenetur quo obcaecati similique inventore illum molestias, veniam fuga, porro tempore quae eum iure maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam possimus necessitatibus blanditiis id voluptatum, modi exercitationem. Non eum quae cumque explicabo incidunt cupiditate molestias quis, a corporis veniam reiciendis ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, accusamus quia, possimus veritatis officia esse quos nisi magnam assumenda earum cumque molestias reprehenderit a. Totam ut dolor est earum repellat!
+            </p>
+
+            <div class="explorefoods-container">
+                <div class="explorefoods-card">
+                    <div class="explorefoods-card-imageholder">
+                        <img src="./img/explore1.jpg" alt="cool image lol your browser couldnt load it">
+                    </div>
+
+                    <div class="explorefoods-card-textholder">
+                        <div class="foodcard-title">Rainbow Vegetable Sandwich</div>
+                        <span class="foodcard-time">Time: 15 - 20 Minutes | Serves: 1</span>
+                        <div class="foodcard-price">$10.50 <span>$11.70</span></div> 
+                        <button class="btn btn-red">Order now</button>
+                    </div>
+                </div>
+                
+                <div class="explorefoods-card">
+                    <div class="explorefoods-card-imageholder">
+                        <img src="./img/explore1.jpg" alt="cool image lol your browser couldnt load it">
+                    </div>
+
+                    <div class="explorefoods-card-textholder">
+                        <div class="foodcard-title">Rainbow Vegetable Sandwich</div>
+                        <span class="foodcard-time">Time: 15 - 20 Minutes | Serves: 1</span>
+                        <div class="foodcard-price">$10.50 <span>$11.70</span></div> 
+                        <button class="btn btn-red">Order now</button>
+                    </div>
+                </div>
+                
+                <div class="explorefoods-card">
+                    <div class="explorefoods-card-imageholder">
+                        <img src="./img/explore1.jpg" alt="cool image lol your browser couldnt load it">
+                    </div>
+
+                    <div class="explorefoods-card-textholder">
+                        <div class="foodcard-title">Rainbow Vegetable Sandwich</div>
+                        <span class="foodcard-time">Time: 15 - 20 Minutes | Serves: 1</span>
+                        <div class="foodcard-price">$10.50 <span>$11.70</span></div> 
+                        <button class="btn btn-red">Order now</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="mid">
+                <div class="dumb-videos">
+                    <h3> Check out our premium recipe</h3>
+                    <iframe width="100%" height="80%" src="https://www.youtube.com/embed/6AeJ_zmUbIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="stuff">
+                    
+                </div>
+            
+
+        </section>
+
+
+
+        <div class="gototop">
+                <a href="#home"><i class="fa-solid fa-chevron-up icon"></i></a>
+
+        </div>
+
     </main>
 
 

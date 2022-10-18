@@ -11,6 +11,10 @@
     )format("woff"),url(./font/lato-regular-webfont.woff2)format("woff2");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "custom-lato", sans-serif;
 }
@@ -248,7 +252,7 @@ body {
     width: 100%;
     justify-content: flex-end;
     background: rgba(255, 255, 255, 0.627);
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */
     /* border-bottom: 10px solid var(--gray-gradient); */
     /* margin-bottom: 130px; */
     margin: 0 auto;
@@ -371,13 +375,14 @@ body {
 }
 
 .dumb-videos {
-    margin: 5px;
-    padding: 10px;
-    border: 7px solid black;
+    /* margin: 5px auto; */
+    padding: 5px;
+    /* border: 7px solid black; */
     border-radius: 20px;
     background: black;
     color: white;
-    width:90%;
+    width:50%;
+    height: 120%;
     align-items: center;
     justify-content: center;
 }
@@ -490,6 +495,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 20px auto;
+    height: 50vh ;
 }
 
 .dumb-videos h3 {
@@ -497,6 +503,96 @@ body {
     padding-bottom: 10px;
     font-weight: bolder;
     font-family: cursive;
+}
+
+
+.explorefoods {
+    /* border: 3px solid black; */
+    /* height: 550px; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.explorefoods-container {
+    /* border: 3px solid tomato; */
+    /* height: 350px; */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.explorefoods h2{
+    text-align: center;
+}
+
+.explorefoods p{
+    padding: 0 20px;
+    margin: 15px;
+}
+
+.explorefoods-card{
+    width: 30%;
+    min-width: 250px;
+    /* border: 3px solid purple; */
+    /* margin-bottom: 10px; */
+}
+
+.explorefoods-card-imageholder{
+    /* border: 3px solid black; */
+    height: 200px;
+    
+    overflow: hidden;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.explorefoods-card-imageholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.foodcard-title {
+    /* font-weight: bolder !important; */
+    display: block;
+    /* font-family: cursive; */
+    font-weight: bolder;
+}
+.foodcard-time{
+    display: block;
+    margin: 8px 0;
+}
+
+
+.foodcard-price{
+    margin: 5px 0;
+    border-bottom: 0.5px solid var(--light-text-color);
+    padding-bottom: 5px;
+}
+
+
+.foodcard-price span{
+    color: var(--text-color);
+    text-decoration: line-through;
+    /* text-align: left; */
+}
+
+
+.icon {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.816);
+    transition: all 2s ease;
+    transform: translateY(5px);
+}
+
+.gototop:hover {
+    /* opacity: 0.8;     */
+    scale: 110%;
+    scale: 100%;
 }
 
 /* .stuff {
