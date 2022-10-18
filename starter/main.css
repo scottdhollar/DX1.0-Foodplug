@@ -583,7 +583,7 @@ body {
     /* text-align: left; */
 }
 
-.faq{
+/* .faq{
     width: 90%;
     margin: 0 auto;
     padding: 30px 5px;
@@ -597,7 +597,6 @@ body {
 .faq-items-title {
     margin: 10px 0;
     display: block;
-    /* color: var(--main-color); */
     font-weight: bolder;
     font-size: 20px;
 }
@@ -617,7 +616,7 @@ body {
     min-width: 350px;
     margin: 15px 0;
 
-}
+} */
 
 
 /* .faq-container{
