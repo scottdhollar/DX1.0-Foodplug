@@ -83,6 +83,31 @@
 
 }
 
+.cta-showcase {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.cta-notice {
+    padding: 30px 20px;
+}
+
+.cta-input-holder input:hover {
+    width: 200px;
+}
+
+footer{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icon-holder{
+    margin: 15px 0;
+}
+
 /* .faq-items p{
     width: 100%;
 } */
