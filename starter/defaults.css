@@ -7,6 +7,7 @@
     --black-color: #000;
     --gradient: linear-gradient(to right, rgba(168, 45, 73, 0.5), rgba(228, 77, 38, 0.5));
     --gray-gradient: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(171, 186, 171, 0.5));
+    --dark-gradient: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(39, 39, 39, 0.5));
 
 
 }

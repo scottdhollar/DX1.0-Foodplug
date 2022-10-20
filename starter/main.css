@@ -216,7 +216,7 @@ body {
     background: var(--main-color);
     transition: all 1.5s ease;
     z-index: 6;
-    border-left:10px solid var(--gray-gradient) ;
+    border-left:10px solid var(--black-gradient) ;
     /* padding: 25px 0 25px 20px; */
 }
 
