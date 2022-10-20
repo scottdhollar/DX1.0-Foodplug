@@ -199,12 +199,12 @@ body {
 .showburger .menu::before {
     transition: all 1s ease;
     transform: rotate(45deg);
-    background: black;
+    background: var(--main-color);
 }
 .showburger .menu::after {
     transition: all 2s ease;
     transform: rotate(-45deg);
-    background: black;
+    background: var(--main-color);
 }
 
 
