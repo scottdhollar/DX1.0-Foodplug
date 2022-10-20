@@ -197,7 +197,7 @@ body {
 }
 
 .showburger .menu::before {
-    transition: all 2s ease;
+    transition: all 1s ease;
     transform: rotate(45deg);
     background: black;
 }
