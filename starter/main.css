@@ -182,12 +182,14 @@ body {
 .showburger{
     position: fixed;
     right: 0;
-    padding-right: 10px;
+    margin-right: 10px;
     /* width: 25px;
     height: 25px; */
     z-index: 7;
     rotate: 360deg;
     transition: all 3s ease;
+    align-items: center;
+    justify-content: center;
 }
 
 .showburger .menu {
