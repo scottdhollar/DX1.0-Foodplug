@@ -198,11 +198,11 @@ body {
 
 .showburger .menu::before {
     transform: rotate(45deg);
-    background: var(--main-color);
+    background: black;
 }
 .showburger .menu::after {
     transform: rotate(-45deg);
-    background: var(--main-color);
+    background: black;
 }
 
 
