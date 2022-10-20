@@ -3,8 +3,8 @@
 ScrollReveal({ reset: true, duration: 3000, })
 
 
-ScrollReveal().reveal('.gototop', {origin:'right', distance: '200px'});
-ScrollReveal().reveal('.mobile-logo', {origin:'left', distance: '200px', delay: 3000});
+ScrollReveal().reveal('.gototop', {origin:'right', distance: '200px', delay: 3000});
+ScrollReveal().reveal('.mobile-logo', {origin:'left', distance: '200px'});
 ScrollReveal().reveal('.hamburger', {origin:'right', distance: '200px'});
 ScrollReveal().reveal('.footer-icon-holder a', {origin:'right'});
 
