@@ -3,9 +3,9 @@
 ScrollReveal({ reset: true, duration: 3000, })
 
 
-ScrollReveal().reveal('.gototop', {origin:'right'});
-ScrollReveal().reveal('.mobile-logo', {origin:'left'});
-ScrollReveal().reveal('.hamburger', {origin:'right'});
+// ScrollReveal().reveal('.gototop', {origin:'right', distance: '100px'});
+ScrollReveal().reveal('.mobile-logo', {origin:'left', distance: '100px'});
+ScrollReveal().reveal('.hamburger', {origin:'right', distance: '100px'});
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
 
