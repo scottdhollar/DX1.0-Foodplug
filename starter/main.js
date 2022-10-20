@@ -1,15 +1,10 @@
 // alert("Foodplug will have maximum access to your call log, sms and notifications 😈")
 
 ScrollReveal({ reset: true, duration: 3000, })
-ScrollReveal().reveal('.heading, .line', {
-    origin: 'left',
-    distance: '100px',
-    duration: 2000
 
-});
 
 ScrollReveal().reveal('.gototop', {origin:'right', distance: '100px'});
-ScrollReveal().reveal('.mobile-logo', {origin:'left', distance: '100px'});
+// ScrollReveal().reveal('.mobile-logo', {origin:'left', distance: '100px'});
 ScrollReveal().reveal('.hamburger', {origin:'right', distance: '100px'});
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
