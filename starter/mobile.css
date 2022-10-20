@@ -120,11 +120,13 @@ footer{
     bottom: 0;
     margin: 20px;
     border: 3px solid rgba(255, 255, 255, 0.682);
+    background: url(./img/gototop.gif);
+    background-size: contain;
     /* color: var(#fff)!important; */
-    background: var(--main-color);
+    /* background: var(--main-color); */
     /* color: #fff; */
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     justify-content: center;
     align-items: center;
     /* opacity: 0.8; */

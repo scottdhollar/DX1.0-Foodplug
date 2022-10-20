@@ -1,5 +1,15 @@
 // alert("Foodplug will have maximum access to your call log, sms and notifications 😈")
 
+ScrollReveal({ reset: true, duration: 3000, })
+ScrollReveal().reveal('.heading, .line', {
+    origin: 'left',
+    distance: '100px',
+    duration: 2000
+
+});
+
+ScrollReveal().reveal('.gototop', {origin:'right', distance: '200px', delay: '5000'});
+
 var unavailablefeature = "This feature is not yet available, try again later 😀"
 
 function dosomething() {

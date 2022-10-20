@@ -101,12 +101,17 @@ body {
 .pizza {
     /* border: 3px solid rgba(255, 255, 255, 0.849); */
     /* border-radius: 150px; */
-    font-size: 35px;
-    padding: 5px;
+    /* font-size: 35px; */
+    /* padding: 5px; */
     /* margin-top: 5px;
     margin-bottom: 5px; */
     /* margin: 5px; */
+    background: url(./img/pizza-gif.gif);
+    background-size: contain;
     transition: all 4s ease;
+    width: 60px;
+    height: 60px;
+    border-radius: 150px;
 
 }
 
