@@ -1,11 +1,11 @@
 // alert("Foodplug will have maximum access to your call log, sms and notifications 😈")
 
-ScrollReveal({ reset: true, duration: 3000, })
+ScrollReveal({ reset: true, duration: 2500, })
 
 
-ScrollReveal().reveal('.gototop', {origin:'right', delay: 3000});
+// ScrollReveal().reveal('.gototop', {origin:'right', delay: 3000});
 ScrollReveal().reveal('.mobile-logo', {origin:'left'});
-ScrollReveal().reveal('.hamburger', {origin:'right'});
+// ScrollReveal().reveal('.hamburger', {origin:'right'});
 // ScrollReveal().reveal('.counter', {origin:'right'});
 ScrollReveal().reveal('.footer-icon-holder a', {origin:'right'});
 
