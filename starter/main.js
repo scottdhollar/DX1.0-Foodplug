@@ -6,7 +6,7 @@ ScrollReveal({ reset: true, duration: 3000, })
 ScrollReveal().reveal('.gototop', {origin:'right', delay: 3000});
 ScrollReveal().reveal('.mobile-logo', {origin:'left'});
 ScrollReveal().reveal('.hamburger', {origin:'right'});
-ScrollReveal().reveal('.counter', {origin:'right'});
+// ScrollReveal().reveal('.counter', {origin:'right'});
 ScrollReveal().reveal('.footer-icon-holder a', {origin:'right'});
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
