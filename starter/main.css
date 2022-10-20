@@ -345,7 +345,7 @@ body {
 }
 
 .header-text-container p {
-    color: var(--text-color);
+    color: rgb(36, 36, 36);
     margin: 20px 0;
     line-height: 1.5;
 }
