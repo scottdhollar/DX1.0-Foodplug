@@ -315,7 +315,7 @@ body {
 
     /* border: 3px solid black; */
     min-height: 450px;
-    background: url(./img/banner-blur2.jpg);
+    background: url(./img/banner-blur.jpg);
     /* background: blur(5px); */
     background-size: cover;
     padding-top: 130px;
