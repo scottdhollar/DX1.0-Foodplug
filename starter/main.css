@@ -315,7 +315,7 @@ body {
 
     /* border: 3px solid black; */
     min-height: 450px;
-    background: url(./img/banner.jpg);
+    background: url(./img/banner-blur.jpg);
     /* background: blur(5px); */
     background-size: cover;
     padding-top: 130px;
@@ -469,7 +469,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background: var(--gray-gradient), url(./img/about3.jpg);
+    background: var(--gray-gradient), url(./img/about3-blur.jpg);
     background-size: cover;
     background-position: bottom right;
 }
