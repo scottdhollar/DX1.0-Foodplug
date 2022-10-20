@@ -187,7 +187,7 @@ body {
     height: 25px; */
     z-index: 7;
     rotate: 360deg;
-    transition: all 3s ease;
+    transition: all 1s ease;
     align-items: center;
     justify-content: center;
 }
@@ -216,6 +216,7 @@ body {
     background: var(--main-color);
     transition: all 1.5s ease;
     z-index: 6;
+    border-left:4px solid var(--gray-gradient) ;
     /* padding: 25px 0 25px 20px; */
 }
 
