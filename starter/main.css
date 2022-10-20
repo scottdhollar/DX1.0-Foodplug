@@ -263,15 +263,16 @@ body {
     position: absolute;
     left: 60px;
     top: 0;
-
+    background: url(./img/pizza-gif.gif);
+    background-size: contain;
     width: 100px;
     height: 100px;
-    background: var(--main-color);
-    display: flex;
+    /* background: var(--main-color); */
+    /* display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    color: var(--white-color);
+    color: var(--white-color); */
     border:5px solid rgba(250, 249, 249, 0.6);
     border-radius: 150px;
     transition: all 4s ease;
