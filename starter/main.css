@@ -184,12 +184,12 @@ body {
     align-items: center;
     justify-content: center;
     right: 0;
-    /* margin-right: 10px; */
+    margin-right: 10px;
     /* width: 25px;
     height: 25px; */
     z-index: 7;
-    rotate: 180deg;
-    transition: all 1s ease;
+    rotate: 360deg;
+    transition: all 0.7s ease;
 }
 
 .showburger .menu {
@@ -197,12 +197,12 @@ body {
 }
 
 .showburger .menu::before {
-    transition: all 0.7s ease;
+    transition: all 0.4s ease;
     transform: rotate(45deg);
     background: var(--main-color);
 }
 .showburger .menu::after {
-    transition: all 0.7s ease;
+    transition: all 0.4s ease;
     transform: rotate(-45deg);
     background: var(--main-color);
 }
