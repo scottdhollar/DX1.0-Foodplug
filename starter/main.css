@@ -80,7 +80,7 @@ body {
     display: none;
 
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 25px;
     align-items: center;
 
     background: var(--main-color);
