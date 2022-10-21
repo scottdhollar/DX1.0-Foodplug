@@ -198,12 +198,12 @@ body {
 
 .showburger .menu::before {
     transition: all 0.7s ease;
-    /* transform: rotate(45deg); */
+    transform: rotate(45deg);
     background: var(--main-color);
 }
 .showburger .menu::after {
     transition: all 0.7s ease;
-    /* transform: rotate(-45deg); */
+    transform: rotate(-45deg);
     background: var(--main-color);
 }
 
