@@ -167,7 +167,7 @@ body {
     height: 3px;
     background: rgba(255, 255, 255, 0.6);
     position: absolute;
-    /* transform: translateY(-10px); */
+    transform: translateY(-10px);
 }
 
 .menu::after {
@@ -176,7 +176,7 @@ body {
     height: 3px;
     background: rgba(255, 255, 255, 0.6);
     position: absolute;
-    /* transform: translateY(10px); */
+    transform: translateY(10px);
 }
 
 .showburger{
