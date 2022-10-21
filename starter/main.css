@@ -96,7 +96,7 @@ body {
     display: flex;
     color: var(--white-color);
     align-items: center;
-    margin-left: 13px;
+    margin-left: 12px;
 }
 
 .pizza {
