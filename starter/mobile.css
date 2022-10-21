@@ -66,6 +66,10 @@
 .about-banner-section{
     height: 35%;
     margin-bottom: 90px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* box-shadow: 5px rgba(0, 0, 0, 0.524); */
+    /* border-top: 10px solid var(--main-color); */
 }
 
 .about-banner-section button{
@@ -133,8 +137,9 @@ footer{
     border-radius: 150px;
     text-align: center;
     /* font-size: 40px; */
-    animation: ripple 3s infinite;
+    animation: ripple 3.5s infinite;
     backdrop-filter: blur(6px);
+    transition: all 0.5s ease;
 }
 }
 

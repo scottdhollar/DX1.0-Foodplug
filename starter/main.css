@@ -618,6 +618,7 @@ body {
 
 .faq-items-title i{
     color: var(--main-color);
+    margin-right: 6px;
 }
 
 .faq-container{
@@ -713,9 +714,7 @@ body {
 }
 
 .gototop:hover {
-    /* opacity: 0.8;     */
-    scale: 110%;
-    scale: 100%;
+    opacity: 0.7;
 }
 
 footer {

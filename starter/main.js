@@ -8,6 +8,8 @@ ScrollReveal({ reset: true, duration: 2500, })
 // ScrollReveal().reveal('.hamburger', {origin:'right'});
 // ScrollReveal().reveal('.counter', {origin:'right'});
 ScrollReveal().reveal('.footer-icon-holder a', {origin:'right'});
+// ScrollReveal().reveal('.foodcard-price', {origin:'right', delay: 1500});
+// ScrollReveal().reveal('.foodcard-price span', {origin:'right'});
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
 
