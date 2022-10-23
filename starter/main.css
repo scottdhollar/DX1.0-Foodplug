@@ -797,8 +797,8 @@ footer button:hover {
 /* Header counter section ends here */
 
 #preloader{
-    background: rgb(96, 6, 148) url(./img/preloader.gif) no-repeat center;
-    background-size: 40%;
+    background: #000 url(./img/7SUP.gif) no-repeat center;
+    background-size: 15%;
     height: 100%;
     width: 100%;
     position: fixed;
