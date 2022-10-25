@@ -13,12 +13,17 @@ ScrollReveal().reveal('.footer-icon-holder a', {origin:'right'});
 
 var unavailablefeature = "This feature is not yet available, try again later 😀"
 
+
+
 function dosomething() {
     alert(unavailablefeature)
 }
 
 
 var contact= "https://wa.me/message/SQWCD3JZAO36B1"
+function callcharges() {
+    alert("🔔 Local call rates apply")
+}
 
 function contactus() {
     window.open (contact)

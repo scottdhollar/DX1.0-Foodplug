@@ -129,7 +129,7 @@ footer{
     /* color: var(#fff)!important; */
     background: var(--main-color);
     color: #fff;
-    padding-top: 5px;
+    padding-top: 8px;
     width: 60px;
     height: 60px;
     justify-content: center;
@@ -142,7 +142,20 @@ footer{
     backdrop-filter: blur(6px);
     transition: all 0.5s ease;
 }
+
+.gototop i{
+    /* text-align: center; */
+    display: block;
 }
+
+footer button:hover {
+    background: var(--main-color-dark);
+    width: 100%;
+    /* justify-content: space-between; */
+}
+}
+
+
 
 
 /* 
