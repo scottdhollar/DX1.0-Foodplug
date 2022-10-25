@@ -137,7 +137,7 @@ footer{
     /* opacity: 0.8; */
     border-radius: 150px;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     animation: ripple 3.5s infinite;
     backdrop-filter: blur(6px);
     transition: all 0.5s ease;
