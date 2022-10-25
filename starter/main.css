@@ -191,7 +191,7 @@ body {
     height: 25px; */
     z-index: 7;
     rotate: 360deg;
-    transition: all 0.7s ease;
+    transition: all 3s ease;
 }
 
 .showburger .menu {
