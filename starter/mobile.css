@@ -117,18 +117,18 @@ footer{
 } */
 
 .gototop {
-    opacity: 0.5;
+    opacity: 0.45;
     /* display: none; */
     position:fixed;
     right: 0;
     bottom: 0;
     margin: 20px;
     border: 3px solid rgba(255, 255, 255, 0.682);
-    background: url(./img/gototop.gif);
-    background-size: contain;
+    /* background: url(./img/gototop.gif); */
+    /* background-size: contain; */
     /* color: var(#fff)!important; */
-    /* background: var(--main-color); */
-    /* color: #fff; */
+    background: var(--main-color);
+    color: #fff;
     width: 60px;
     height: 60px;
     justify-content: center;
@@ -136,7 +136,7 @@ footer{
     /* opacity: 0.8; */
     border-radius: 150px;
     text-align: center;
-    /* font-size: 40px; */
+    font-size: 40px;
     animation: ripple 3.5s infinite;
     backdrop-filter: blur(6px);
     transition: all 0.5s ease;
