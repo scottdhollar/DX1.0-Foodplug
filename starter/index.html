@@ -259,6 +259,17 @@
 
         </a>
 
+        <div class="container">
+            <form onsubmit="sendEmail();  reset(); return false;">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="YourName" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
         <footer>
             <p>&copy; 2022 Foodplug 💕,  powered by TERTIUX44</p>
             <div class="footer-icon-holder">
@@ -311,12 +322,28 @@
     <!-- preloader continues -->
     <script>
         var loader = document.getElementById("preloader");
-
+        
         window.addEventListener ("load", function(){
             loader.style.display = "none";
         })
     </script>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "secondsonofadebayo@gmail.com",
+                Password : "abcd4722",
+                To : 'youngzaint149@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "And this is the body"
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
     
 
 </body>
