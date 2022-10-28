@@ -333,12 +333,16 @@
         function sendEmail(){
             Email.send({
                 Host : "smtp.elasticemail.com",
-                Username : "secondsonofadebayo@gmail.com",
-                Password : "abcd4722",
+                Username : "scotttailor999@gmail.com",
+                Password : "A618F0DC71CFC2F8E86AD8956E6AA62C3E1C",
                 To : 'youngzaint149@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
+                // From : document.getElementById("email").value,
+                From : "scotttailor999@gmail.com",
+                Subject : "New Sign Up for NEWSLETTER",
+                Body : document.getElementById("email").value
+                // Body : document.getElementById("email").value,
+                // Body : document.getElementById("phone").value,
+                // Body : document.getElementById("message").value
             }).then(
             message => alert(message)
             );
