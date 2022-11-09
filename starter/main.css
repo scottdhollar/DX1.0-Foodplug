@@ -869,6 +869,7 @@ footer button:hover {
     cursor: pointer;
     opacity: 0.8;
     transition: all 1s ease;
+    backdrop-filter: blur(5px);
 }
 
 .fab-active{
