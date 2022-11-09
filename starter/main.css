@@ -85,7 +85,12 @@ body {
 
     background: var(--main-color);
     /* position: fixed; */
-    width: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.35);
+
+    /* margin-bottom: 100px; */
     /* z-index: 0; */
 }
 
@@ -340,6 +345,7 @@ body {
     background: url(./img/banner-blur2.jpg);
     /* background: blur(5px); */
     background-size: cover;
+    margin-top: 100px;
     padding-top: 130px;
     padding-bottom: 30px;
 
