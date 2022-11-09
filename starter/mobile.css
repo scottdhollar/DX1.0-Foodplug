@@ -117,7 +117,7 @@ footer{
 } */
 
 .gototop {
-    opacity: 0.45;
+    opacity: 0.4;
     /* display: none; */
     position:fixed;
     right: 0;
@@ -138,14 +138,21 @@ footer{
     border-radius: 150px;
     text-align: center;
     font-size: 32px;
-    animation: ripple 3.5s infinite;
     backdrop-filter: blur(6px);
     transition: all 0.5s ease;
+}
+
+.gototop:hover{
+    animation: ripple 2.5s 2;
 }
 
 .gototop i{
     /* text-align: center; */
     display: block;
+}
+
+.fab{
+    display: flex;
 }
 
 footer button:hover {

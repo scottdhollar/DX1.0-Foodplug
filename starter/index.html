@@ -253,13 +253,13 @@
             
         </section>
         
-        <a href="#home">
-                    <!-- <div class="gototop"></div> -->
+        <!-- <a href="#home">
+                    <div class="gototop"></div>
                     <div class="gototop"><i class="fa-solid fa-chevron-up"></i></div>
 
-        </a>
+        </a> -->
 
-        <div class="container">
+        <!-- <div class="container">
             <form onsubmit="sendEmail();  reset(); return false;">
                 <h3>GET IN TOUCH</h3>
                 <input type="text" id="name" placeholder="YourName" required>
@@ -268,7 +268,29 @@
                 <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
                 <button type="submit">Send</button>
             </form>
+        </div> -->
+
+
+        <div class="fab">
+            <img src="./images/plus.png" alt="">
         </div>
+    
+        <div class="box">
+            <a href="www.facebook.com" target="_blank" class="item item1"><img src="./images/facebook.png" alt=""></a>
+            <a href="www.instagram.com" target="_blank" class="item item2"><img src="./images/instagram.png" alt=""></a>
+            <a href="https://twitter.com/tertiux44" target="_blank" class="item item3"><img src="./images/twitter.png" alt=""></a>
+            <a href="www.whatsapp.com" target="_blank" class="item item4"><img src="./images/whatsapp.png" alt=""></a>
+        </div>
+    
+        <script>
+            document.querySelector('.fab').addEventListener('click', function(e){
+                document.querySelector('.box').classList.toggle('box-active');
+                document.querySelector('.fab').classList.toggle('fab-active');
+            });
+        </script>
+
+
+
 
         <footer>
             <p>&copy; 2022 Foodplug 💕,  powered by TERTIUX44</p>
@@ -294,6 +316,8 @@
                 </button>
             </a>
         </footer>
+
+
         
         <!-- <div class="mid">
             <div class="dumb-videos">
