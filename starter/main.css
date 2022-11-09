@@ -893,7 +893,7 @@ footer button:hover {
 .box{
     position: fixed;
     bottom: 44px;
-    right: 25px;
+    right: 15px;
     height: 0px;
     transition-delay: 0.3s;
     width: 80px;
