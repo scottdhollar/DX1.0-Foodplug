@@ -35,11 +35,13 @@ function contactus() {
 var hamburgerdiv = document.querySelector(".hamburger")
 var mobileLinks = document.querySelector(".mobile-link-holder")
 var mybackdrop = document.querySelector(".backdrop")
+var navm = document.querySelector(".nav-mobile")
 
 
 function kaisen() {
     hamburgerdiv.classList.toggle("showburger")
     mobileLinks.classList.toggle("show-mobile-link-holder")
     mybackdrop.classList.toggle("show-backdrop")
+    navm.classList.toggle("nav-mobilez")
 }
 
