@@ -351,7 +351,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 10px 20px;
+    padding: 0 5vw 10px 5vw;
     /* background: #fff; */
 }
 
@@ -369,7 +369,7 @@ body {
 .langs span{
     color: var(--white-color);
     /* text-align: left; */
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
 
 
