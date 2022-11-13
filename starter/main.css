@@ -280,7 +280,7 @@ body {
 } */
 
 
-.mobile-link-holder a:hover {
+.mobile-active-link {
     background: var(--white-color);
     color: var(--main-color) !important;
 }
@@ -310,8 +310,8 @@ body {
     align-items: center;
     padding: 7px;
     margin-left: 20px;
-    background: rgba(245, 245, 245, 0.635);
-    border: 2px solid white;
+    background: rgba(245, 245, 245, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.8);
     height: 60px;
     border-radius: 50%;
 }
@@ -362,6 +362,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 5vw 10px 5vw;
+    transform: translateY(-30px);
     /* background: #fff; */
 }
 
