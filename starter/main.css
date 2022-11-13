@@ -978,7 +978,7 @@ footer button:hover {
     justify-content: center;
     padding: 0px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.277);
-    z-index: 0;
+    z-index: 3;
     cursor: pointer;
     opacity: 0.8;
     transition: all 1s ease;
@@ -1001,6 +1001,8 @@ footer button:hover {
     /* transform: rotate(45deg); */
     transition: 0.4s;
     z-index: 3;
+    /* opacity: 0.9; */
+    transition: all 0.5s ease;
     /* height: 30px; */
 }
 
@@ -1019,7 +1021,7 @@ footer button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     /* padding: 30px; */
 }
 
@@ -1077,6 +1079,7 @@ footer button:hover {
 
 .box-active{
     height: 290px;
+    /* padding-bottom: 50px; */
 }
 
 .fab-active img{
