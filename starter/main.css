@@ -283,7 +283,7 @@ body {
 }
 
 .language{
-    margin-top: 40px;
+    margin-top: 3vh;
     width: 100vw;
     height: 70px;
     background-color: var(--main-color);
@@ -343,7 +343,7 @@ body {
     width: 100vw;
     background-color: var(--main-color);
     position: absolute;
-    bottom: -40px;
+    bottom: -20px;
     height: 60px;
     transition: all 1s ease;
     display: flex;
