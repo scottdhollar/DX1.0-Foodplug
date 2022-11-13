@@ -369,7 +369,7 @@ body {
 .langs span{
     color: var(--white-color);
     /* text-align: left; */
-    margin-right: 42px;
+    margin-right: 10vw;
 }
 
 
