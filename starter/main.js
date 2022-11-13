@@ -46,6 +46,9 @@ function kaisen() {
     mybackdrop.classList.toggle("show-backdrop")
     navm.classList.toggle("nav-mobilez")
     document.querySelector('.fab').classList.toggle("fab-kaisen")
+    document.querySelector('.box').classList.remove("box-active")
+    document.querySelector('.fab').classList.remove("fab-active")
+    
 }
 
 function otherLang(){

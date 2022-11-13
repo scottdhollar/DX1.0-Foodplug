@@ -994,6 +994,7 @@ footer button:hover {
 .fab-kaisen{
     transform: translateX(200%);
     opacity: 0;
+    transition-delay: 0.7s;
 }
 
 .fab img{
