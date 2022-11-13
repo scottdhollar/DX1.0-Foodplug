@@ -291,11 +291,14 @@ body {
     background: var(--main-color);
     font-size: 75%;
     border-radius: 7px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
+/* .mobile-link-holder .call{
+} */
+
 .language{
-    /* margin-top: 7vh; */
+    margin-top: 7vh;
     width: 100vw;
     height: 70px;
     background-color: var(--main-color);
