@@ -350,7 +350,7 @@ body {
     transition: all 1s ease;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 20px 10px 20px;
     /* background: #fff; */
 }
