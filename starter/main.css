@@ -238,13 +238,14 @@ body {
     position: fixed; 
     right: 0;
     top: 0;
-    height: 60vh;
+    /* height: 70vh; */
     width: 100%;
     background: var(--main-color);
     transition: all 1.5s ease;
     z-index: 6;
     margin-top: 80px;
     opacity: 0;
+
     /* border-left:10px solid var(--black-gradient) ; */
     /* padding: 25px 0 25px 20px; */
 }
@@ -280,10 +281,11 @@ body {
     background: var(--main-color);
     font-size: 75%;
     border-radius: 7px;
+    margin-bottom: 30px;
 }
 
 .language{
-    margin-top: 3vh;
+    /* margin-top: 7vh; */
     width: 100vw;
     height: 70px;
     background-color: var(--main-color);
@@ -342,7 +344,7 @@ body {
     opacity: 0;
     width: 100vw;
     background-color: var(--main-color);
-    position: absolute;
+    position: relative;
     bottom: -20px;
     height: 60px;
     transition: all 1s ease;
