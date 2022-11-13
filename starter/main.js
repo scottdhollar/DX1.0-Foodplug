@@ -45,6 +45,7 @@ function kaisen() {
     mobileLinks.classList.toggle("show-mobile-link-holder")
     mybackdrop.classList.toggle("show-backdrop")
     navm.classList.toggle("nav-mobilez")
+    document.querySelector('.fab').classList.toggle("fab-kaisen")
 }
 
 function otherLang(){
