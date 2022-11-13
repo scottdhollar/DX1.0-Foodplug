@@ -329,7 +329,7 @@ body {
     border: 2px solid transparent;
     position: relative;
     color: var(--white-color);
-    animation: boing;
+    animation: none;
     animation-timing-function: ease;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -390,6 +390,14 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.651);
     border-radius: 50%;
 }
+
+.langs a .chn img, .rus img, .ukr img{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+     */
+     opacity: 0.5;
+}
+
+
 
 .langs span{
     color: var(--white-color);
