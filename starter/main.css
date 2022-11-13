@@ -274,8 +274,13 @@ body {
     padding: 25px 0 25px 25px;
 }
 
+/* .mobile-link-holder ul a:first-child{
+    background: var(--white-color);
+    color: var(--main-color) !important;
+} */
 
-.mobile-active-link {
+
+.mobile-link-holder a:hover {
     background: var(--white-color);
     color: var(--main-color) !important;
 }
