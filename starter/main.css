@@ -17,6 +17,7 @@ html{
 
 body {
     font-family: "custom-lato", sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Page resets ends here*/
@@ -280,6 +281,95 @@ body {
     font-size: 75%;
     border-radius: 7px;
 }
+
+.language{
+    margin-top: 40px;
+    width: 100vw;
+    height: 70px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.current{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    margin-left: 20px;
+    background: rgba(245, 245, 245, 0.635);
+    border: 2px solid white;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.current img{
+    width: 100%;
+}
+
+
+.others {
+    margin-left: 20px;
+    border: 2px solid transparent;
+    position: relative;
+    color: var(--white-color);
+    transition: all 0.5s ease;
+    animation: boing;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 4;
+    animation-delay: 5s;
+    animation-direction: alternate;
+
+}
+
+@keyframes boing {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
+}
+
+.current-rotate .others{
+    transform: rotate(180deg);
+    animation: none;
+    transition: all 0.5s ease;
+}
+
+
+
+.langs{
+    opacity: 0;
+    width: 100vw;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -40px;
+    height: 60px;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px 10px 20px;
+    /* background: #fff; */
+}
+
+.langs-show{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.langs a img{
+    width: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    border-radius: 50%;
+}
+
+.langs span{
+    color: var(--white-color);
+    /* text-align: left; */
+    margin-right: 42px;
+}
+
 
 .nav-desktop {
     /* border: 3px solid tomato; */

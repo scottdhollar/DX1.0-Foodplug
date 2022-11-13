@@ -36,6 +36,8 @@ var hamburgerdiv = document.querySelector(".hamburger")
 var mobileLinks = document.querySelector(".mobile-link-holder")
 var mybackdrop = document.querySelector(".backdrop")
 var navm = document.querySelector(".nav-mobile")
+var current = document.querySelector(".current")
+var langs = document.querySelector(".langs")
 
 
 function kaisen() {
@@ -43,5 +45,11 @@ function kaisen() {
     mobileLinks.classList.toggle("show-mobile-link-holder")
     mybackdrop.classList.toggle("show-backdrop")
     navm.classList.toggle("nav-mobilez")
+}
+
+function otherLang(){
+    current.classList.toggle("current-rotate")
+    langs.classList.toggle("langs-show")
+
 }
 
