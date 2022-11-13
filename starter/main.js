@@ -48,6 +48,7 @@ function kaisen() {
     document.querySelector('.fab').classList.toggle("fab-kaisen")
     document.querySelector('.box').classList.remove("box-active")
     document.querySelector('.fab').classList.remove("fab-active")
+    document.querySelector('body').classList.toggle("buddy")
     
 }
 

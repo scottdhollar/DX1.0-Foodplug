@@ -20,6 +20,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+.buddy{
+    overflow-y: hidden;
+}
+
 /* Page resets ends here*/
 
 .btn {
@@ -70,6 +74,7 @@ body {
 
 .show-backdrop {
     display: block;
+    /* overflow-y: hidden; */
 }
 
 /* backdrop css codes ends here */
