@@ -329,7 +329,6 @@ body {
     border: 2px solid transparent;
     position: relative;
     color: var(--white-color);
-    transition: all 0.5s ease;
     animation: boing;
     animation-timing-function: ease;
     animation-duration: 1s;
@@ -337,6 +336,7 @@ body {
     animation-iteration-count: 4;
     animation-delay: 5s;
     animation-direction: alternate;
+    transition: all 0.5s ease;
 
 }
 
@@ -346,9 +346,9 @@ body {
 }
 
 .current-rotate .others{
-    transform: rotate(180deg);
     animation: none;
     transition: all 0.5s ease;
+    transform: rotate(180deg);
 }
 
 
@@ -359,19 +359,30 @@ body {
     background-color: var(--main-color);
     position: relative;
     bottom: -20px;
-    height: 60px;
+    height: 100%;
     transition: all 1s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw 10px 5vw;
-    transform: translateY(-30px);
+    padding: 10px 5vw 10px 5vw;
+    z-index: -100;
+    /* border: 2px solid black; */
+    transform: translateY(-35px);
     /* background: #fff; */
 }
 
 .langs-show{
+    z-index: 1;
     opacity: 1;
-    transform: translateY(10px);
+    transform: translateY(7px);
+}
+
+.langs a{
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .langs a img{
