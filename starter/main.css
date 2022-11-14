@@ -18,6 +18,11 @@ html{
 body {
     font-family: "custom-lato", sans-serif;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
 
 .buddy{
@@ -391,10 +396,10 @@ body {
     border-radius: 50%;
 }
 
-.langs a .chn img, .rus img, .ukr img{
+.chn img, .rus img, .ukr img{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
      */
-     opacity: 0.5;
+     opacity: 0.3;
 }
 
 
@@ -443,10 +448,10 @@ body {
     transition: all 4s ease;
 }
 
-.pizza-desktop:hover {
+/* .pizza-desktop:hover {
     rotate: 360deg;
     scale: 120%;
-}
+} */
 
 .desktop-link-holder {
     list-style: none;
@@ -465,6 +470,81 @@ body {
     padding: 13px 20px;
     display: block;
     border: 2px solid transparent;
+}
+
+.langdxtop{
+    display: flex;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* z-index: 1; */
+    /* border: 2px solid black; */
+}
+.langdxtop span, .langdxtop i{
+    transition: all 1s ease;
+    color: var(--main-color);
+}
+
+.langdxtop span{
+    margin-right: 10px;
+}
+
+.langdxtop:hover .otherlangsdxtop{
+    /* display: flex; */
+    /* transition-delay: opacity 5s ease; */
+    transition: all 1s ease;
+    opacity: 1;
+    transform: translateY(150px);
+}
+
+.langdxtop:hover i{
+    transition: all 1s ease;
+    transform: rotate(180deg);
+}
+
+.otherlangsdxtop{
+    position: absolute;
+    transition: all 1.5s ease;
+    /* transition-delay: opacity 5s ease; */
+    transform: translateY(-300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    /* background: var(--main-color); */
+    height: 300px;
+    opacity: 0;
+}
+
+.otherlangsdxtop a{
+    /* display: none; */
+    /* position: absolute; */
+    /* top: 20px; */
+    display: flex;
+    /* height: 40px; */
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    /* z-index: -1; */
+    /* margin-top: 0px; */
+}
+
+
+
+.otherlangsdxtop a img{
+    border: 5px solid rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+    width: 40px;
+    transition: all 0.7s ease;
+    /* width: 100%; */
+}
+
+.otherlangsdxtop a img:hover{
+    scale: 1.15;
+    transition: all 0.7s ease;
 }
 
 .desktop-link-holder ul a:hover{
@@ -1151,6 +1231,7 @@ footer button:hover {
     position: fixed;
     top: 0;
     z-index: 100;
+    overflow-y: hidden;
 }
 
 
