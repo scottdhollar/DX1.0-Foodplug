@@ -105,8 +105,7 @@ body {
     /* z-index: -1; */
 }
 
-/* .nav-mobilez{
-} */
+
 
 .nav-mobile a{
     text-decoration: none;
@@ -1099,7 +1098,7 @@ footer button:hover {
 }
 
 .fab-active{
-    opacity: 1;
+    opacity: 1 !important;
     transition: all 1s ease;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }

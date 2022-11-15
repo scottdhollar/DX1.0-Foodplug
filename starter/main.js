@@ -38,6 +38,30 @@ var mybackdrop = document.querySelector(".backdrop")
 var navm = document.querySelector(".nav-mobile")
 var current = document.querySelector(".current")
 var langs = document.querySelector(".langs")
+var fabb = document.querySelector(".fab")
+
+window.addEventListener('scroll', () =>{
+    const scrollable = document.documentElement.scrollHeight -window.innerHeight;
+    const scrolled = window.scrollY;
+    if (Math.ceil(scrolled) < scrollable){
+        // alert('you\'ve reached the bottom')
+        fabb.style.opacity = '0.8'
+    } else {
+        fabb.style.opacity = '0'
+        console.log(scrollable)
+    }
+
+    
+} )
+
+// window.addEventListener('scroll', () =>{
+//     const scrollable = document.documentElement.scrollHeight -window.innerHeight;
+//     const scrolled = window.scrollY;
+//     if (Math.ceil(scrolled) !== scrollable){
+//         alert('you\'ve not reached the bottom')
+//         fabb.style.opacity = '0.8'
+//     };
+// } )
 
 
 function kaisen() {
