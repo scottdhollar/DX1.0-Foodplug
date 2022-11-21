@@ -18,7 +18,7 @@ html{
 body {
     font-family: "custom-lato", sans-serif;
     -webkit-tap-highlight-color: transparent;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 ::-webkit-scrollbar{
@@ -26,7 +26,11 @@ body {
 }
 
 .buddy{
-    overflow-y: hidden;
+    overflow-y: hidden !important;
+}
+
+.io{
+    font-size: 17px;
 }
 
 /* Page resets ends here*/
@@ -38,11 +42,12 @@ body {
 
 .btn-white {
     background: transparent;
-    /* border: 2px solid var(--main-color); */
+    border: 2px solid rgba(0, 0, 0, 0.46);
 }
 
 .btn-white:hover {
     color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 .btn-red {
@@ -61,24 +66,31 @@ body {
 /* backdrop css code is here */
 
 .backdrop {
+    /* z-index: -1; */
     width :100%;
-    height: 100%;
-    background: var(--light-text-color);
+    height: 100vh;
+    background: transparent;
     position: fixed;
     left: 0;
     top: 0;
-    display: none;
-    transition: all 1s ease;
-    backdrop-filter: blur(5px);
-    /* z-index: 2; */
-}
-
-.backdrop:hover {
+    /* display: none; */
+    visibility: hidden;
+    transition: all 0.7s ease;
     backdrop-filter: blur(0px);
+    /* overflow: hidden; */
+    /* filter: blur(5px); */
 }
+/* 
+.backdrop:hover {
+} */
 
 .show-backdrop {
-    display: block;
+    visibility: visible;
+    z-index: 0;
+    backdrop-filter: blur(5px);
+    background: var(--light-text-color);
+    transition: all 1s;
+    /* display: block; */
     /* overflow-y: hidden; */
 }
 
@@ -99,7 +111,7 @@ body {
     width: 100vw;
     position: fixed;
     top: 0;
-    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 
     /* margin-bottom: 100px; */
     /* z-index: -1; */
@@ -171,7 +183,7 @@ body {
 .menu {
     height: 4px;
     width: 100%;
-    transition: all 2s ease;
+    transition: all 1.5s ease;
     transition-delay: 1s;
     background: rgba(255, 255, 255, 0.8);
     position: relative;
@@ -190,7 +202,7 @@ body {
 
 .menu::before {
     content: "";
-    width: 100%;
+    width: 28px;
     height: 4px;
     /* transition-delay: 1s; */
     border-radius: 7px;
@@ -202,7 +214,7 @@ body {
 
 .menu::after {
     content: "";
-    width: 100%;
+    width: 28px;
     height: 4px;
     background: rgba(255, 255, 255, 0.8);
     transition: all 1s ease;
@@ -213,11 +225,11 @@ body {
 }
 
 .showburger{
-    position: fixed !important;
+    /* position: fixed !important; */
     align-items: center;
     justify-content: center;
-    right: 0;
-    margin-right: 21px;
+    /* right: 0;
+    margin-right: 21px; */
     /* width: 25px;
     height: 25px; */
     z-index: 7;
@@ -226,6 +238,8 @@ body {
 }
 
 .showburger .menu {
+    /* width: 0px; */
+    /* transform-origin: center; */
     background: transparent;
     transition: all 0.15s ease;
 }
@@ -247,21 +261,24 @@ body {
     position: fixed; 
     right: 0;
     top: 0;
-    /* height: 70vh; */
+    height: 70vh;
+    max-height: 500px;
     width: 100%;
     background: var(--main-color);
-    transition: all 1.5s ease;
-    z-index: 6;
+    transition: all 0.7s ease;
     margin-top: 80px;
     opacity: 0;
-
+    z-index: -1;
+    
     /* border-left:10px solid var(--black-gradient) ; */
     /* padding: 25px 0 25px 20px; */
 }
 
 .show-mobile-link-holder {
+    z-index: 6;
     transform: translateX(0);
     opacity: 1;
+    transition: all 1s ease;
     /* position: fixed !important;  */
 
     /* border-radius: 50px; */
@@ -302,24 +319,26 @@ body {
 } */
 
 .language{
-    margin-top: 7vh;
-    width: 100vw;
+    margin-top: 2vh;
+    width: 50%;
+    min-width: 150px;
+    max-width: 200px;
     height: 70px;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    /* border: 2px solid black; */
 }
 .current{
-    width: 60px;
+    width: 50px;
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 3px;
     margin-left: 20px;
     background: rgba(245, 245, 245, 0.35);
     border: 2px solid rgba(255, 255, 255, 0.8);
-    height: 60px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -362,23 +381,30 @@ body {
     width: 100vw;
     background-color: var(--main-color);
     position: relative;
-    bottom: -20px;
-    height: 100%;
-    transition: all 1s ease;
+    /* top: -20px; */
+    /* bottom: -20px; */
+    /* height: 100%; */
+    transition: all 0.5s ease;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* display: none; */
     padding: 10px 5vw 10px 5vw;
-    z-index: -100;
+    visibility: hidden;
+    z-index: -1;
     /* border: 2px solid black; */
     transform: translateY(-35px);
     /* background: #fff; */
 }
 
 .langs-show{
-    z-index: 1;
+    /* z-index: 1; */
+    /* display: flex; */
+    visibility: visible;
     opacity: 1;
-    transform: translateY(7px);
+    transition: all 0.7s ease;
+    /* top: 0; */
+    transform: translateY(0);
 }
 
 .langs a{
@@ -398,7 +424,7 @@ body {
 .chn img, .rus img, .ukr img{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
      */
-     opacity: 0.3;
+     opacity: 0.2;
 }
 
 
@@ -592,6 +618,7 @@ body {
 
 .header-text-container button {
     margin-right: 10px;
+    /* border: 2px solid ; */
 }
 /* Header section ends here */
 
@@ -916,7 +943,7 @@ body {
     outline: none;
     border-top-left-radius: 15px ;
     border-bottom-left-radius: 15px;
-    border: 0.4px solid black;
+    border: 0.4px solid rgba(0, 0, 0, 0.496);
 }
 
 .cta-input-holder input:hover {
@@ -929,6 +956,12 @@ body {
     border: 2px solid var(--main-color);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.cta-input-holder button:hover{
+    background: transparent;
+    color: var(--main-color);
+    font-weight: bolder;
 }
 
 /* .faq-container{
@@ -959,7 +992,7 @@ footer {
     color: var(--white-color); 
 }
 
-footer button {
+/* footer button {
     border: 2px solid rgba(255, 255, 255, 0.692);
     background: transparent;
     color: var(--white-color);
@@ -968,7 +1001,7 @@ footer button {
     justify-content: space-between;
     display: flex;
     border-radius: 18px;
-}
+} */
 
 footer a{
     text-decoration: none;
@@ -985,6 +1018,8 @@ footer button:hover {
     /* height: 60px;
     width: 200px; */
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gototop i {
@@ -1100,7 +1135,8 @@ footer button:hover {
 .fab-active{
     opacity: 1 !important;
     transition: all 1s ease;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    scale: 1.05;
+    /* box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8); */
 }
 
 .fab-kaisen{
@@ -1128,26 +1164,28 @@ footer button:hover {
     bottom: 44px;
     right: 15px;
     height: 0px;
-    transition-delay: 0.3s;
+    /* transition-delay: 0.3s; */
     width: 80px;
-    transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.5s;
+    /* transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95); */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
+    justify-content: center;
     /* padding: 30px; */
 }
 
 .item{
     overflow: hidden;
     border-radius: 50%;
-    transition: 0.4s ease-in;
+    transition: all 0.5s ease;
     width: 44px;
     height: 44px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    opacity: 0;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin-bottom: 5px;
 }
@@ -1159,24 +1197,30 @@ footer button:hover {
 }
 
 .item1{
-    transition-delay: 0.2s;
+    /* transition-delay: 0.2s; */
+    /* transition: all 0.5s ease; */
+    opacity: 1;
     background: #1565c0;
 }
 
+
 .item2{
-    transition-delay: 0.2s;
+    /* transition-delay: 0.2s; */
     background: #ff4336;
+    opacity: 1;
 }
 
 .item3{
-    transition-delay: 0.2s;
+    /* transition-delay: 0.2s; */
     background: #29b6fc;
+    opacity: 1;
 }
 
 .item4{
-    transition-delay: 0.2s;
+    /* transition-delay: 0.2s; */
     background: green;
     margin-bottom: 69px;
+    opacity: 1;
 }
 
 .item:hover{
@@ -1192,12 +1236,17 @@ footer button:hover {
 
 .box-active{
     height: 290px;
+    transition: all 0.5s;
     /* padding-bottom: 50px; */
 }
 
 .fab-active img{
-    transform: rotate(315deg);
+    transform: rotate(135deg);
     width: 40%;
+}
+
+.hidde{
+    z-index: -3;
 }
 
 /* .footer{
