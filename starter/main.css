@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+
+
+button{
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
+
 @font-face {
     font-family: "custom-lato";
     src: url(./font/Lato-Bold.ttf)format("truetype"),url(./font/lato-regular-webfont.woff
@@ -16,10 +26,13 @@ html{
 }
 
 body {
+    cursor: default;
     font-family: "custom-lato", sans-serif;
     -webkit-tap-highlight-color: transparent;
     overflow-x: hidden !important;
 }
+
+
 
 ::-webkit-scrollbar{
     width: 0;
@@ -68,7 +81,7 @@ body {
 .backdrop {
     /* z-index: -1; */
     width :100%;
-    height: 100vh;
+    height: 120vh;
     background: transparent;
     position: fixed;
     left: 0;
@@ -77,7 +90,7 @@ body {
     visibility: hidden;
     transition: all 0.7s ease;
     backdrop-filter: blur(0px);
-    /* overflow: hidden; */
+    overflow: hidden;
     /* filter: blur(5px); */
 }
 /* 
@@ -131,6 +144,7 @@ body {
     color: var(--white-color);
     align-items: center;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .pizza {
@@ -147,6 +161,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 150px;
+    cursor: pointer;
 
 }
 
@@ -159,11 +174,13 @@ body {
     font-size: 25px;
     font-weight: bolder;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 
 .hamburger {
     /* border: 3px solid tomato; */
+    cursor: pointer;
     width: 28px;
     height: 25px;
     display: flex;
@@ -293,6 +310,14 @@ body {
     text-decoration: none;
     display: block;
     padding: 25px 0 25px 25px;
+    transition: all 0.35s ease;
+}
+
+.mobile-link-holder a:hover{
+    /* color: var(--main-color); */
+    opacity: 0.5;
+    /* background: #fff; */
+    transition: all 0.35s ease;
 }
 
 /* .mobile-link-holder ul a:first-child{
@@ -304,6 +329,10 @@ body {
 .mobile-active-link {
     background: var(--white-color);
     color: var(--main-color) !important;
+}
+
+.mobile-active-link:hover{
+    opacity: 1 !important;
 }
 
 .mobile-link-holder button {
@@ -328,9 +357,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
     /* border: 2px solid black; */
 }
 .current{
+    cursor: pointer;
     width: 50px;
     display: flex;
     align-items: center;
@@ -344,6 +375,7 @@ body {
 
 .current img{
     width: 100%;
+    cursor: pointer;
 }
 
 
@@ -353,6 +385,7 @@ body {
     position: relative;
     color: var(--white-color);
     animation: none;
+    cursor: pointer;
     animation-timing-function: ease;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -381,6 +414,7 @@ body {
     width: 100vw;
     background-color: var(--main-color);
     position: relative;
+    cursor: pointer;
     /* top: -20px; */
     /* bottom: -20px; */
     /* height: 100%; */
@@ -419,6 +453,7 @@ body {
     width: 30px;
     border: 2px solid rgba(255, 255, 255, 0.651);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .chn img, .rus img, .ukr img{
@@ -580,20 +615,28 @@ body {
 
     /* border: 3px solid black; */
     min-height: 450px;
-    background: url(./img/banner-blur2.jpg);
+    /* background: url(./img/banner.jpg), blur(5px); */
+    background-image:url(./img/banner-blur2.jpg);
     /* background: blur(5px); */
     background-size: cover;
     margin-top: 100px;
     padding-top: 130px;
+    /* position: relative; */
     padding-bottom: 30px;
 
 }
 
+/* .header-banner-section img{ */
+    /* border: 3px solid black; */
+/* } */
+
 .banner-content {
     /* border: 3px solid red; */
+    /* position: absolute; */
     width: 90%;
     height: 100%;
     margin: 0 auto;
+    /* backdrop-filter: blur(2px); */
 }
 
 .header-text-container {
@@ -961,7 +1004,7 @@ body {
 .cta-input-holder button:hover{
     background: transparent;
     color: var(--main-color);
-    font-weight: bolder;
+    /* font-weight: bolder; */
 }
 
 /* .faq-container{

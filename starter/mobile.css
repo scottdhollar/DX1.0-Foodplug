@@ -1,5 +1,19 @@
 @media screen and (max-width: 855px) {
 
+    /* *{
+        animation: bl;
+        animation-timing-function: ease;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        filter: blur(0px);
+    
+    }
+    
+    @keyframes bl {
+        0%{filter: blur(10px);}
+        100%{filter: blur(0);}
+    } */
+
     .header-text-container {
         min-width: 100%;
         /* backdrop-filter: blur(0.8px); */
