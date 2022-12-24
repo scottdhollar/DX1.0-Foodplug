@@ -26,7 +26,7 @@ var unavailablefeature = "This feature is not yet available, try again later ğŸ˜
 // }
 
 function contactus() {
-    window.open (contact)
+    // window.open (contact)
 }
 
 
