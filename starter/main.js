@@ -92,3 +92,12 @@ function otherLang(){
 
 }
 
+// detecting mobile or desktop
+
+
+
+
+
+
+
+
