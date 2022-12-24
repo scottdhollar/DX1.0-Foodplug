@@ -200,11 +200,13 @@ body {
 .menu {
     height: 4px;
     width: 100%;
+    /* width: 100%; */
     transition: all 1.5s ease;
     transition-delay: 1s;
     background: rgba(255, 255, 255, 0.8);
     position: relative;
     border-radius: 7px;
+    /* transform: scaleX(0); */
 }
 
 /* .menu:hover {

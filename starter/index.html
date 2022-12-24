@@ -417,16 +417,7 @@
     <!-- preloader continues -->
     <script>
         var loader = document.getElementById("preloader");
-        window.addEventListener("load", () =>{
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-                // true for mobile device
-                // document.write("mobile device");
-                // alert('mobile')
-            }else{
-                // false for not mobile device
-                // alert('desktop')
-            }
-        })
+        
         window.addEventListener ("load", function(){
             loader.style.display = "none";
         })
@@ -463,6 +454,8 @@
             );
         }
     </script>
+
+    <script src="mobilecheck.js"></script>
     
 
 </body>
