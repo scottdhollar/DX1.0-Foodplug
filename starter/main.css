@@ -1382,6 +1382,7 @@ footer button:hover {
     align-items: center;
     font-size: 30px;
     animation: mobile-turn 2.5s ease infinite forwards;
+    scale: 0.7;
 }
 
 @keyframes mobile-turn {
