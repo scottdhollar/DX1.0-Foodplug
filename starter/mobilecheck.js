@@ -1,4 +1,4 @@
-window.addEventListener("load", () =>{
+window.addEventListener("loadstart", () =>{
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
         // true for mobile device
         // document.write("mobile device");

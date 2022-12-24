@@ -1361,6 +1361,8 @@ footer button:hover {
     display: none;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
 }
 
 .landscape-mobile span{
