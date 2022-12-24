@@ -1367,7 +1367,7 @@ footer button:hover {
     position: absolute;
     bottom: 20px;
     color: #333;
-    opacity: 0.4;
+    opacity: 0;
 }
 
 .device{
