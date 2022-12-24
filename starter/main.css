@@ -89,7 +89,7 @@ body {
     /* display: none; */
     visibility: hidden;
     transition: all 0.7s ease;
-    backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
     overflow: hidden;
     /* filter: blur(5px); */
 }
@@ -100,8 +100,8 @@ body {
 .show-backdrop {
     visibility: visible;
     z-index: 0;
-    backdrop-filter: blur(5px);
-    background: var(--light-text-color);
+    /* backdrop-filter: blur(5px); */
+    background: rgba(108, 5, 37, 0.463);
     transition: all 1s;
     /* display: block; */
     /* overflow-y: hidden; */
