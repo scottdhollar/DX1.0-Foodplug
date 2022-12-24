@@ -1315,15 +1315,38 @@ footer button:hover {
 /* Header counter section ends here */
 
 #preloader{
-    background: #000 url(./img/circle-loader.gif) no-repeat center;
-    background-size: 15%;
+    /* background: #000 url(./img/circle-loader.gif) no-repeat center; */
+    /* background-size: 15%; */
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 100;
-    overflow-y: hidden;
+    background: rgba(124, 0, 74, 0.37);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.rotary{
+    width: 110px;
+    height: 110px;
+    border: 4px solid #fff;
+    border-bottom:4px solid rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    animation: turnloader 2s ease infinite forwards;
+}
+
+@keyframes turnloader {
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(1500deg);}
+    /* 0%{transform: rotate(-700deg);} */
+    /* 0%{transform: rotate(-700deg);} */
+    100%{transform: rotate(0deg);}
+}
+
 
 
 header,main{
