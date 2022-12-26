@@ -501,9 +501,10 @@ body {
     align-items: center;
     font-size: 50px;
     color: var(--white-color); */
-    border:5px solid rgba(250, 249, 249, 0.6);
+    border:5px solid rgba(250, 249, 249, 0.05);
     border-radius: 150px;
     transition: all 4s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 /* .pizza-desktop:hover {
