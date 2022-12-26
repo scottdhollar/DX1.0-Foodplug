@@ -10,7 +10,7 @@ function helen(){
         });
     },
     {
-        threshold: 0.5,
+        threshold: 0.45,
         // rootMargin: "-100px"
     }
     
