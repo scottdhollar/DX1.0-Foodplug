@@ -111,7 +111,7 @@
         </nav>
 
         <div class="header-banner-section" id="home">
-            <div class="banner-content">
+            <div class="banner-content hidden">
                     <div class="header-text-container">
                         <h1>Good food choices <br />
                             are good <br />
@@ -129,21 +129,21 @@
         </div>
 
         <div class="header-counter-section">
-            <div class="counter">
+            <div class="counter hidden">
                 <h2>1287+</h2>
                 <p>savings</p>
             </div>
-            <div class="counter">
+            <div class="counter hidden">
                 <h2>6428+</h2>
                 <p>photos</p>
             </div>
 
-            <div class="counter">
+            <div class="counter hidden">
                 <h2>1004+</h2>
                 <p>rockets</p>
             </div>
 
-            <div class="counter">
+            <div class="counter hidden">
                 <h2>2017+</h2>
                 <p>globes</p>
             </div>   
@@ -165,12 +165,12 @@
                     <p>
                         9+ We also provide gluten free menu and desserts for those who are on the look out for something new. We are passionate about keeping the kitchen fresh and in tact, and are very hard working, always on time and making sure that the end-product is pleasing for everyone. Our menu is based on the best seasonal and imported ingredients.
                     </p>
-                    <button class="btn btn-red" onclick="dosomething()">Learn more 
+                    <button class="btn btn-red hidden" onclick="dosomething()">Learn more 
                         <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
             <div class="about-container">
-                <div class="about-text-holder">
+                <div class="about-text-holder hidden">
                     <h2>We make everything by
                         hand with the best possible
                         ingredients.</h2>
@@ -185,7 +185,7 @@
                     <button class="btn btn-red" onclick="dosomething()">Learn more 
                         <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-                <div class="about-image-holder">
+                <div class="about-image-holder hidden">
                     <img src="./img/about2.png" alt="4 Simple Italian recipes">
                 </div>
 
@@ -206,7 +206,7 @@
             </p>
 
             <div class="explorefoods-container">
-                <div class="explorefoods-card">
+                <div class="explorefoods-card hidden">
                     <div class="explorefoods-card-imageholder">
                         <img src="./img/explore1.jpg" alt="cool image lol your browser couldnt load it">
                     </div>
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 
-                <div class="explorefoods-card">
+                <div class="explorefoods-card hidden">
                     <div class="explorefoods-card-imageholder">
                         <img src="./img/pizza-topping.jpg" alt="cool image lol your browser couldnt load it">
                     </div>
@@ -232,7 +232,7 @@
                     </div>
                 </div>
                 
-                <div class="explorefoods-card">
+                <div class="explorefoods-card hidden">
                     <div class="explorefoods-card-imageholder">
                         <img src="./img/fancy-pounded-yam.jpg" alt="cool image lol your browser couldnt load it">
                     </div>
@@ -256,22 +256,22 @@
         <section class="faq" id="faq">
             <h2>Frequently asked Questions</h2>
             <div class="faq-container">
-                <div class="faq-items">
+                <div class="faq-items hidden">
                     <span class="faq-items-title"><i class="fa-solid fa-leaf"></i> Foodera Bread really baked Fresh each day?</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae dolor inventore quam laboriosam, ad, explicabo, maiores non id quos vitae consectetur quasi fugiat mollitia aspernatur.</p>
                 </div>
                 
-                <div class="faq-items">
+                <div class="faq-items hidden">
                     <span class="faq-items-title"><i class="fa-solid fa-leaf"></i> Foodera Pays Staff 75% of Profit 😯</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae dolor inventore quam laboriosam, ad, explicabo, maiores non id quos vitae consectetur quasi fugiat mollitia aspernatur.</p>
                 </div>
                 
-                <div class="faq-items">
+                <div class="faq-items hidden">
                     <span class="faq-items-title"><i class="fa-solid fa-leaf"></i> Do Regular Customers get Discounts?</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae dolor inventore quam laboriosam, ad, explicabo, maiores non id quos vitae consectetur quasi fugiat mollitia aspernatur.</p>
                 </div>
                 
-                <div class="faq-items">
+                <div class="faq-items hidden">
                     <span class="faq-items-title"><i class="fa-solid fa-leaf"></i> Does Fooder spy on my bank details?</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae dolor inventore quam laboriosam, ad, explicabo, maiores non id quos vitae consectetur quasi fugiat mollitia aspernatur. Nisi sunt praesentium consequatur? lorem</p>
                 </div>
@@ -286,7 +286,7 @@
                 <button class="btn btn-red">Learn more</button>
             </div>
 
-            <div class="cta-notice">
+            <div class="cta-notice hidden">
                 <h2>Hurry up! Subscribe to our newsletter <br>
                 and get 30% off</h2>
                 <p>Limited time offer for this month. No credit card required 😁</p>
@@ -339,7 +339,7 @@
 
 
 
-        <footer>
+        <footer class="hidden">
             <p>&copy; 2022 Foodplug 💕,  powered by TERTIUX44</p>
             <div class="footer-icon-holder">
 
@@ -387,6 +387,7 @@
             <a href=""><i class="fa-brands fa-linkedin-in footer-icon-red"></i></a>
         </div>
     </section> -->
+    <script src="app.js"></script>
 
     <script src="main.js"></script>
 
@@ -424,10 +425,15 @@
 
     <!-- preloader continues -->
     <script>
+        var hidden = document.querySelector(".hidden")
+        // var main = document.querySelector("")
         var loader = document.getElementById("preloader");
 
         function hidePreloader(){
             loader.style.display = "none";
+            helen()
+            // header.style.display = "flex";
+            // main.style.display = "block";
 
         }
         

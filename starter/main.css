@@ -99,7 +99,7 @@ body {
 
 .show-backdrop {
     visibility: visible;
-    z-index: 0;
+    z-index: 10;
     /* backdrop-filter: blur(5px); */
     background: rgba(108, 5, 37, 0.463);
     transition: all 1s;
@@ -127,7 +127,7 @@ body {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 
     /* margin-bottom: 100px; */
-    /* z-index: -1; */
+    z-index: 10;
 }
 
 
@@ -485,6 +485,7 @@ body {
     /* border-bottom: 10px solid var(--gray-gradient); */
     /* margin-bottom: 130px; */
     margin: 0 auto;
+    z-index: 10;
 }
 
 .pizza-desktop {
@@ -675,6 +676,7 @@ body {
     background: var(--main-color);
     color: var(--white-color);
     display: flex;
+    overflow: hidden;
 } 
 
 .counter {
@@ -1408,10 +1410,38 @@ footer button:hover {
     } */
 }
 
+.hidden{
+    transform: translateY(70px);
+    opacity: 0;
+    /* z-index: -200; */
+    /* display: none; */
+    /* display: default; */
+    transition: all 1s ease;
+}
+
+footer.hidden{
+    transform: translateY(0);
+}
+
+.btn.hidden{
+    transform: translateY(0);
+}
+
+.counter.hidden{
+    transform: translateY(0);
+}
+
+.show{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 
 
 header,main{
     max-width: 1500px;
+    /* visibility:; */
     margin: 0 auto;
+    /* display: none; */
 }
