@@ -1325,7 +1325,7 @@ footer button:hover {
     top: 0;
     z-index: 100;
     background: rgba(124, 0, 74, 0.37);
-    background: rgba(235, 223, 237, 0.852);
+    background: rgba(235, 223, 237, 0.649);
     backdrop-filter: blur(10px);
     overflow: hidden;
     display: flex;
