@@ -1393,15 +1393,19 @@ footer button:hover {
     100%{transform: rotate(90deg);}
 }
 
-
-@media (orientation: landscape){
+@media screen and (max-height:400px) {
     .mobile-true header, .mobile-true main{
         display: none;
     }
-
+    
     .landscape-mobile{
         display: flex;
     }
+}
+
+
+@media (orientation: landscape){
+
 }
 
 
