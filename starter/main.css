@@ -247,10 +247,6 @@ body {
     /* position: fixed !important; */
     align-items: center;
     justify-content: center;
-    /* right: 0;
-    margin-right: 21px; */
-    /* width: 25px;
-    height: 25px; */
     z-index: 7;
     /* rotate: 360deg; */
     /* transition: all 3s ease; */
@@ -558,7 +554,8 @@ body {
     /* transition-delay: opacity 5s ease; */
     transition: all 1s ease;
     opacity: 1;
-    transform: translateY(150px);
+    height: 300px;
+    /* transform: translateY(150px); */
 }
 
 .langdxtop:hover i{
@@ -570,15 +567,17 @@ body {
     position: absolute;
     transition: all 1.5s ease;
     /* transition-delay: opacity 5s ease; */
-    transform: translateY(-300px);
+    /* transform: translateY(-300px); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     /* background: var(--main-color); */
-    height: 300px;
-    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+    opacity: 1;
+    top: 40px;
 }
 
 .otherlangsdxtop a{
@@ -597,7 +596,7 @@ body {
 
 
 .otherlangsdxtop a img{
-    border: 5px solid rgba(0, 0, 0, 0.26);
+    /* border: 5px solid rgba(0, 0, 0, 0.26); */
     border-radius: 50%;
     width: 40px;
     transition: all 0.7s ease;
@@ -1403,12 +1402,12 @@ footer button:hover {
     .landscape-mobile{
         display: flex;
     }
+    /* @media (orientation: landscape){
+        
+    } */
 }
 
 
-@media (orientation: landscape){
-
-}
 
 
 header,main{
