@@ -10,8 +10,8 @@ function helen(){
         });
     },
     {
-        // threshold: 0.45,
-        rootMargin: "-100px"
+        threshold: 0.2,
+        // rootMargin: "-100px"
     }
     
     
