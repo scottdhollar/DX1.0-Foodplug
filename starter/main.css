@@ -1338,6 +1338,7 @@ footer button:hover {
     transition: all 1s ease;
 }
 
+
 .rotary{
     width: 110px;
     height: 110px;
@@ -1350,6 +1351,12 @@ footer button:hover {
 @keyframes turnloader {
     0%{transform: rotate(-700deg);}
     100%{transform: rotate(0deg);}
+}
+
+@media screen and (max-width: 500px) {
+    .rotary{
+        scale: 0.7;
+    }
 }
 
 /* .mobile-true{
