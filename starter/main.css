@@ -957,8 +957,9 @@ body {
     background: var(--gradient), url("./img/cta.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     color: var(--white-color);
+    position: relative;
 }
 
 .cta-notice{
@@ -1450,10 +1451,40 @@ footer.hidden{
     transform: translateY(0);
 }
 
+.cta-showcase.hidden{
+    transform: translateY(0);
+    background-attachment: fixed;
+    transform: none;
+}
+
+.cta-showcase.show{
+    transform: translateY(0);
+    background-attachment: fixed !important;
+    transform: none;
+}
+
+.cta-showcase h2.hidden{
+    transform: translateY(30px);
+}
+
+.cta-showcase .btn.hidden{
+    transform: translateY(30px);
+}
+
+.cta-showcase h2.show{
+    transform: translateY(0);
+}
+
+.cta-showcase .btn.show{
+    transform: translateY(0);
+}
+
 .show{
     transform: translateY(0);
     opacity: 1;
 }
+
+
 
 
 
