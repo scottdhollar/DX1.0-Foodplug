@@ -1523,6 +1523,7 @@ footer.hidden{
     z-index: 21;
     left: 0;
     top: 25vh;
+    width: 100vw;
     overflow: hidden;
     display: flex;
     justify-content: center;
