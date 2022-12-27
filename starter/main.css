@@ -1645,7 +1645,7 @@ footer.hidden{
     cursor: pointer;
     position: absolute;
     top: -40px;
-    right: -40px;
+    right: 0;
     font-size: 30px;
     color: #fff;
 }
