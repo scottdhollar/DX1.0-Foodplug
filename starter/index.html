@@ -296,7 +296,7 @@
                     <button class="btn" onclick="subscription()">Subscribe</button>
                 </div>
             </div>
-            
+
 
             <div class="subscription-backdrop hidden" id="subscription-backdrop" onclick="subscriptionclose()"></div>
 
@@ -441,12 +441,15 @@
     <!-- preloader continues -->
     <script>
         var hidden = document.querySelector(".hidden")
-        // var main = document.querySelector("")
+        var subscript = document.querySelector(".subscription")
+        var subscriptB = document.querySelector(".subscription-backdrop")
         var loader = document.getElementById("preloader");
 
         function hidePreloader(){
             loader.style.display = "none";
             helen()
+            subscript.style.display = "flex"
+            subscriptB.style.display = "flex"
             // header.style.display = "flex";
             // main.style.display = "block";
 

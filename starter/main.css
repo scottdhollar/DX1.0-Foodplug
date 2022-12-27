@@ -1499,6 +1499,8 @@ footer.hidden{
     /* display: none; */
     animation: bgggx 1s ease forwards;
     overflow: hidden;
+    display: none;
+    opacity: 0;
 }
 
 
@@ -1507,6 +1509,7 @@ footer.hidden{
     /* display: flex; */
     backdrop-filter: blur(5px);
     animation: bggg 0.7s ease forwards;
+    opacity: 1;
 }
 
 
@@ -1525,6 +1528,8 @@ footer.hidden{
     justify-content: center;
     align-items: center;
     transition: all 1s ease;
+    display: none;
+    opacity: 0;
     /* display: none; */
     animation: bgggx 1s ease forwards;
     /* top: 40%; */
@@ -1537,15 +1542,16 @@ footer.hidden{
 @keyframes bgggx {
     0%{}
     95%{
-        opacity: 0;
+        /* opacity: 0; */
     }
     100%{
-        opacity: 0;
+        /* opacity: 0; */
         visibility: hidden;
     }
 }
 
 .subscription.appear{
+    opacity: 1;
     display: flex;
     animation: bggg 1s ease forwards;
 
@@ -1553,14 +1559,14 @@ footer.hidden{
 
 @keyframes bggg {
     0%{
-        opacity: 0;
+        /* opacity: 0; */
         visibility: visible;
     }
 
 
 
     100%{
-        opacity: 1;
+        /* opacity: 1; */
     }
 }
 
