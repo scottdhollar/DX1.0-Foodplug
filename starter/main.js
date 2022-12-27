@@ -92,6 +92,25 @@ function otherLang(){
 
 }
 
+var subscriptionn = document.querySelector('.subscription')
+var subscriptionBackdrop = document.querySelector('.subscription-backdrop')
+
+function subscription(){
+    // alert('hey')
+    subscriptionn.classList.add('appear')
+    subscriptionBackdrop.classList.add('appear')
+    // subscriptionn.style.display = "flex";
+    // subscriptionBackdrop.style.display = "flex";
+}
+
+function subscriptionclose(){
+    
+    subscriptionn.classList.remove('appear')
+    subscriptionBackdrop.classList.remove('appear')
+    // subscriptionn.style.display = "none";
+    // subscriptionBackdrop.style.display = "none";
+}
+
 // detecting mobile or desktop
 
 

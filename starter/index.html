@@ -293,9 +293,24 @@
 
                 <div class="cta-input-holder">
                     <input type="text" placeholder="xxxxxxx@gmail.com">
-                    <button class="btn" onclick="dosomething()">Subscribe</button>
+                    <button class="btn" onclick="subscription()">Subscribe</button>
                 </div>
             </div>
+            
+
+            <div class="subscription-backdrop hidden" id="subscription-backdrop" onclick="subscriptionclose()"></div>
+
+            <div class="subscription" id="subcriptionx">
+                <div class="successful">
+                    <div class="close" onclick="subscriptionclose()"><i class="fa fa-close"></i></div>
+                    <h2 class="hhhhh">successful</h2>
+                    <div class="check">
+                        <i class="fa fa-check"></i>
+                    </div>
+                </div>
+                <div class="failed"></div>
+            </div>
+
             
         </section>
         
