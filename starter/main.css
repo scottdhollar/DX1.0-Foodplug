@@ -1644,7 +1644,7 @@ footer.hidden{
 .subscription .close{
     cursor: pointer;
     position: absolute;
-    top: -40px;
+    top: -70px;
     right: 0;
     font-size: 30px;
     color: #fff;
