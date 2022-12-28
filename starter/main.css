@@ -1669,12 +1669,13 @@ header,main{
 }
 
 body::-webkit-scrollbar{
-    width: 1vw;
+    width: 10px;
     margin: 10px;
-    background: transparent;
+    background: rgba(229, 9, 9, 0);
 }
 
 body::-webkit-scrollbar:hover{
+    width: 15px;
 }
 
 body::-webkit-scrollbar-thumb{
@@ -1682,7 +1683,7 @@ body::-webkit-scrollbar-thumb{
     transition: all 1s ease !important;
     -webkit-transition: all 1s ease;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
-    background: rgba(108, 5, 38, 0.889);
+    background: rgba(108, 5, 38, 0.8);
 }
 
 
