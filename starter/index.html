@@ -444,19 +444,21 @@
         var subscript = document.querySelector(".subscription")
         var subscriptB = document.querySelector(".subscription-backdrop")
         var loader = document.getElementById("preloader");
+        var burdy = document.querySelector("body")
 
         function hidePreloader(){
             loader.style.display = "none";
             helen()
             subscript.style.display = "flex"
             subscriptB.style.display = "flex"
+            burdy.style.overflowY = "scroll"
             // header.style.display = "flex";
             // main.style.display = "block";
 
         }
         
         window.addEventListener ("load", () => {
-            setTimeout(hidePreloader , 1500);
+            // setTimeout(hidePreloader , 1500);
         })
 
         function checkos(){
