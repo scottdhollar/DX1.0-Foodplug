@@ -1670,22 +1670,21 @@ header,main{
 
 body::-webkit-scrollbar{
     width: 10px;
-    margin: 10px;
     background: rgba(229, 9, 9, 0);
 }
 
-body::-webkit-scrollbar:hover{
-    width: 15px;
-}
 
 body::-webkit-scrollbar-thumb{
     border-radius: 0.5em;
-    transition: all 1s ease !important;
     -webkit-transition: all 1s ease;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
     background: rgba(108, 5, 38, 0.8);
 }
 
+body::-webkit-scrollbar-thumb:hover{
+    background: rgba(62, 3, 22, 1);
+    /* width: 15px; */
+}
 
 body::-webkit-scrollbar-track{
     background: rgba(255, 0, 0, 0.171);
