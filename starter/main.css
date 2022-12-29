@@ -1486,13 +1486,11 @@ footer button:hover {
 }
 
 .cta-showcase.hidden{
-    transform: translateY(0);
     background-attachment: fixed;
     transform: none;
 }
 
 .cta-showcase.show{
-    transform: translateY(0);
     background-attachment: fixed !important;
     transform: none;
 }
@@ -1667,7 +1665,7 @@ footer button:hover {
 .subscription.appear{
     opacity: 1;
     display: flex;
-    animation: bggg 0.5s ease forwards;
+    animation: bggg 0.25s ease forwards;
 
 }
 
@@ -1696,7 +1694,7 @@ footer button:hover {
     align-items: center;
     scale: 0.65;
     position: relative;
-    transition: all 0.7s ease;
+    transition: all 0.5s ease;
 }
 
 .subscription.appear .successful{
@@ -1710,7 +1708,7 @@ footer button:hover {
 .subscription .successful h2{
     font-size: 45px;
     color: rgb(124, 0, 74);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .subscription .successful h2{
