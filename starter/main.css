@@ -1522,9 +1522,10 @@ footer button:hover {
     transform: translateY(0);
     /* transform: translateX(-50px); */
     opacity: 0;
-    filter: blur(5px);
+    /* filter: blur(5px); */
     position: relative;
-    transition: all 0.5s ease;
+    scale: 0.8;
+    transition: all 1s ease;
 }
 
 .linked{z-index: 3;}
@@ -1532,21 +1533,21 @@ footer button:hover {
 .tweet{z-index: 1;}
 
 .show.linked{
-    transition-delay: 0.1s;
+    transition-delay: 0.25s;
 }
 
 .show.gitt{
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .show.tweet{
-    transition-delay: 1.6s;
+    transition-delay: 0.75s;
 }
 
 .show.gitt, .show.tweet, .show.linked{
-    transform: translateX(0);
     opacity: 1;
-    filter: blur(0);
+    scale: 1;
+    /* filter: blur(0); */
 }
 
 @media screen and (max-width: 800px) {
