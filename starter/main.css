@@ -1520,10 +1520,11 @@ footer button:hover {
 
 .hidden.gitt, .hidden.tweet, .hidden.linked{
     transform: translateY(0);
-    transform: translateX(-50px);
+    /* transform: translateX(-50px); */
     opacity: 0;
     filter: blur(5px);
     position: relative;
+    transition: all 0.5s ease;
 }
 
 .linked{z-index: 3;}
@@ -1531,15 +1532,15 @@ footer button:hover {
 .tweet{z-index: 1;}
 
 .show.linked{
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
 }
 
 .show.gitt{
-    transition-delay: 0.7s;
+    transition-delay: 0.3s;
 }
 
 .show.tweet{
-    transition-delay: 1.1s;
+    transition-delay: 1.6s;
 }
 
 .show.gitt, .show.tweet, .show.linked{
