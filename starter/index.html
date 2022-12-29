@@ -111,17 +111,17 @@
         </nav>
 
         <div class="header-banner-section" id="home">
-            <div class="banner-content hidden">
+            <div class="banner-content">
                     <div class="header-text-container">
-                        <h1>Good food choices <br />
+                        <h1 class="hidden bannerh1">Good food choices <br />
                             are good <br />
                             investments.
                         </h1>
-                        <p>We offer 6 delicious pizzas, from basic cheese and basil pizza (€6) to our signature Classic pizzeria ('Taverne'). A variety of our speciality pizzerias offer great value money such as 'Pizzeria de la Nazionale', where we’ve created a new delicious pizza in the heart of Milan, and the ‘Madrone’ pizzeria, which offers all-day dining, with an Italian twist to the menu.
+                        <p class="hidden bannerp">We offer 6 delicious pizzas, from basic cheese and basil pizza (€6) to our signature Classic pizzeria ('Taverne'). A variety of our speciality pizzerias offer great value money such as 'Pizzeria de la Nazionale', where we’ve created a new delicious pizza in the heart of Milan, and the ‘Madrone’ pizzeria, which offers all-day dining, with an Italian twist to the menu.
                         </p>
-                        <button class="btn btn-white" onclick="dosomething()">Learn more
+                        <button class="btn btn-white hidden" onclick="dosomething()">Learn more
                             <i class="fa-solid fa-arrow-right"></i></button>
-                        <button class="btn btn-red" onclick="dosomething()">Order now
+                        <button class="btn btn-red hidden" onclick="dosomething()">Order now
                             <i class="fa-solid fa-basket-shopping"></i></button>
                     </div>
 
@@ -160,7 +160,7 @@
                 <div class="about-image-holder hidden">
                     <img src="./img/about1.png" alt="A simple Italian recipe">
                 </div>
-                <div class="about-text-holder hidden">
+                <div class="about-text-holder hidden textshit">
                     <h2>We pride ourselves on <br /> making real food from the <br /> best products </h2>
                     <p>
                         9+ We also provide gluten free menu and desserts for those who are on the look out for something new. We are passionate about keeping the kitchen fresh and in tact, and are very hard working, always on time and making sure that the end-product is pleasing for everyone. Our menu is based on the best seasonal and imported ingredients.
@@ -185,7 +185,7 @@
                     <button class="btn btn-red" onclick="dosomething()">Learn more 
                         <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
-                <div class="about-image-holder hidden">
+                <div class="about-image-holder hidden img3">
                     <img src="./img/about2.png" alt="4 Simple Italian recipes">
                 </div>
 
@@ -354,17 +354,17 @@
 
 
 
-        <footer class="hidden">
+        <footer>
             <p>&copy; 2022 Foodplug 💕,  powered by TERTIUX44</p>
             <div class="footer-icon-holder">
 
-                <a href="https://www.linkedin.com/in/tertiux44/" target="_blank">
+                <a href="https://www.linkedin.com/in/tertiux44/" target="_blank" class="hidden linked">
                     <span class="icon-container"> <i class="fa-brands fa-linkedin-in"></i></span>
                 </a>
-                <a href="https://github.com/scottdhollar" target="_blank">
+                <a href="https://github.com/scottdhollar" target="_blank" class="hidden gitt">
                     <span class="icon-container"> <i class="fa-brands fa-github"></i></span>
                 </a>
-                <a href="https://twitter.com/tertiux44" target="_blank">
+                <a href="https://twitter.com/tertiux44" target="_blank" class="hidden tweet">
                     <span class="icon-container"> <i class="fa-brands fa-twitter" ></i></span>
                 </a>
 
@@ -445,13 +445,16 @@
         var subscriptB = document.querySelector(".subscription-backdrop")
         var loader = document.getElementById("preloader");
         var burdy = document.querySelector("body")
-
+        
+        window.scrollTo(0,0)
+        
         function hidePreloader(){
             loader.style.display = "none";
             helen()
             subscript.style.display = "flex"
             subscriptB.style.display = "flex"
             burdy.style.overflowY = "scroll"
+            // window.scrollTo(0,0)
             // header.style.display = "flex";
             // main.style.display = "block";
 
@@ -459,6 +462,9 @@
         
         window.addEventListener ("load", () => {
             setTimeout(hidePreloader , 1500);
+        })
+        
+        window.addEventListener("loadstart", () =>{
         })
 
         function checkos(){

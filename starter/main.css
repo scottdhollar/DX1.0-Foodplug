@@ -1426,8 +1426,25 @@ footer button:hover {
     transition: all 1s ease;
 }
 
-footer.hidden{
-    transform: translateY(0);
+
+
+.hidden.bannerh1{
+    transform: translateX(-100px);
+}
+
+.show.bannerh1{
+    transform: translateX(0);
+    /* opacity: 0; */
+}
+
+.hidden.bannerp{
+    transform: translateX(100px);
+    /* opacity: 0; */
+}
+
+.show.bannerp{
+    transform: translateX(0);
+    /* opacity: 0; */
 }
 
 .btn.hidden{
@@ -1442,12 +1459,28 @@ footer.hidden{
     transform: translateY(0);
 }
 
-.about-text-holder.hidden{
-    transform: translateY(0);
+.about-text-holder.hidden.textshit{
+    transform: translateX(30px);
+}
+
+.about-text-holder.show.textshit{
+    transform: translateX(0);
 }
 
 .about-image-holder.hidden{
-    transform: translateY(0);
+    transform: translateX(-100px);
+}
+
+.about-image-holder.hidden.img3{
+    transform: translateX(100px);
+}
+
+.about-image-holder.show.img3{
+    transform: translateX(0);
+}
+
+.about-image-holder.show{
+    transform: translateX(0);
 }
 
 .cta-showcase.hidden{
@@ -1483,6 +1516,78 @@ footer.hidden{
     opacity: 1;
 }
 
+.hidden.gitt, .hidden.tweet, .hidden.linked{
+    transform: translateY(0);
+    transform: translateX(-50px);
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.show.linked{
+    transition-delay: 0.3s;
+}
+
+.show.gitt{
+    transition-delay: 0.7s;
+}
+
+.show.tweet{
+    transition-delay: 1.1s;
+}
+
+.show.gitt, .show.tweet, .show.linked{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media screen and (max-width: 800px) {
+    .hidden.bannerh1{
+        transform: translateY(-70px);
+    }
+    
+    .show.bannerh1{
+        transform: translateY(0);
+        /* opacity: 0; */
+    }
+    
+    .hidden.bannerp{
+        transform: translateY(70px);
+        /* opacity: 0; */
+    }
+    
+    .show.bannerp{
+        transform: translateY(0);
+        /* opacity: 0; */
+    }
+
+    .about-text-holder.hidden.textshit{
+        transform: translateY(70px);
+    }
+    
+    .about-text-holder.show.textshit{
+        transform: translateY(0);
+    }
+    
+    .about-image-holder.hidden{
+        transform: translateY(70px);
+    }
+    
+    .about-image-holder.hidden.img3{
+        transform: translateY(70px);
+    }
+    
+    .about-image-holder.show.img3{
+        transform: translateY(0);
+    }
+    
+    .about-image-holder.show{
+        transform: translateY(0);
+    }
+    
+    
+}
+
 .subscription-backdrop{
     width: 100vw;
     height: 100vh;
@@ -1493,10 +1598,10 @@ footer.hidden{
     top: 0;
     left: 0;
     z-index: 20;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     backdrop-filter: blur(0);
     /* display: none; */
-    animation: bgggx 1s ease forwards;
+    animation: bgggx 0.5s ease forwards;
     overflow: hidden;
     display: none;
     opacity: 0;
@@ -1507,7 +1612,7 @@ footer.hidden{
 .subscription-backdrop.appear{
     /* display: flex; */
     backdrop-filter: blur(5px);
-    animation: bggg 0.7s ease forwards;
+    animation: bggg 0.5s ease forwards;
     opacity: 1;
 }
 
@@ -1527,11 +1632,11 @@ footer.hidden{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     display: none;
     opacity: 0;
     /* display: none; */
-    animation: bgggx 1s ease forwards;
+    animation: bgggx 0.5s ease forwards;
     /* top: 40%; */
     /* left: 40%; */
     /* top: -50%; */
@@ -1553,7 +1658,7 @@ footer.hidden{
 .subscription.appear{
     opacity: 1;
     display: flex;
-    animation: bggg 1s ease forwards;
+    animation: bggg 0.5s ease forwards;
 
 }
 
@@ -1582,7 +1687,7 @@ footer.hidden{
     align-items: center;
     scale: 0.65;
     position: relative;
-    transition: all 1s ease;
+    transition: all 0.7s ease;
 }
 
 .subscription.appear .successful{
