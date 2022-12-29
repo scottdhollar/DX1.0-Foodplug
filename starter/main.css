@@ -1420,7 +1420,7 @@ footer button:hover {
 }
 
 .hidden{
-    transform: translateY(70px);
+    transform: translateY(15vh);
     opacity: 0;
     /* z-index: -200; */
     /* display: none; */
@@ -1431,7 +1431,7 @@ footer button:hover {
 
 
 .hidden.bannerh1{
-    transform: translateX(-100px);
+    transform: translateX(-20vw);
 }
 
 .show.bannerh1{
@@ -1440,7 +1440,7 @@ footer button:hover {
 }
 
 .hidden.bannerp{
-    transform: translateX(100px);
+    transform: translateX(30vw);
     /* opacity: 0; */
 }
 
@@ -1524,7 +1524,7 @@ footer button:hover {
     opacity: 0;
     /* filter: blur(5px); */
     position: relative;
-    scale: 0.8;
+    scale: 0.5;
     transition: all 1s ease;
 }
 
