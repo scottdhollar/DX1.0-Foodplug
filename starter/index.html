@@ -355,7 +355,7 @@
 
 
         <footer>
-            <p>&copy; 2022 Foodplug 💕,  powered by TERTIUX44</p>
+            <p> 2022 Foodplug 💕,  powered by TERTIUX44</p>
             <div class="footer-icon-holder">
 
                 <a href="https://www.linkedin.com/in/tertiux44/" target="_blank" class="hidden linked">
@@ -446,26 +446,30 @@
         var loader = document.getElementById("preloader");
         var burdy = document.querySelector("body")
         
-        window.scrollTo(0,0)
+        function gototop(){
+            window.scrollTo(0,0);
+        }
         
         function hidePreloader(){
+            // window.scrollTo(0,0)
             loader.style.display = "none";
-            helen()
             subscript.style.display = "flex"
             subscriptB.style.display = "flex"
             burdy.style.overflowY = "scroll"
-            // window.scrollTo(0,0)
+            helen()
             // header.style.display = "flex";
             // main.style.display = "block";
 
         }
         
         window.addEventListener ("load", () => {
+            // gototop;
             setTimeout(hidePreloader , 1500);
         })
         
-        window.addEventListener("loadstart", () =>{
-        })
+        // window.addEventListener("loadstart", () =>{
+        //     window.scrollTo(0,0)
+        // })
 
         function checkos(){
             if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
