@@ -9,7 +9,11 @@
     <link rel="icon" href="./img/pizza-logo.png" type="image/x-icon">
     <script src="./scrollreveal.min.js"></script>
     <script>
-            window.scrollTo(0,0);
+        window.onload = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+
     </script>
 
 </head>
