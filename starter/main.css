@@ -1694,7 +1694,7 @@ footer button:hover {
     align-items: center;
     scale: 0.65;
     position: relative;
-    transition: all 0.5s ease;
+    transition: all 0.25s ease;
 }
 
 .subscription.appear .successful{
@@ -1712,7 +1712,7 @@ footer button:hover {
 }
 
 .subscription .successful h2{
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     opacity: 0;
 }
 
@@ -1722,10 +1722,11 @@ footer button:hover {
 }
 
 .subscription .successful .check{
-    transform: translateY(50px);
-    transition: all 1s ease;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
     opacity: 0;
 }
+
 
 .subscription.appear .successful .check{
     transform: translateY(0);
@@ -1738,20 +1739,50 @@ footer button:hover {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    /* border: 2px solid green; */
+    position: relative;
+}
+
+.subscription .successful .check i::after{
+    position: absolute;
+    content: "";
+    /* border: 2px solid red; */
+    width: 70px;
+    height: 100%;
+    z-index: 1;
+    background: rgba(91, 0, 46, 1);
+    opacity: 1;
+    animation: textshit 2s ease infinite forwards;
 }
 
 .subscription .successful .check i{
     width: 70px;
+    position: relative;
     height: 70px;
-    border: 2px solid;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    z-index: 1;
     align-items: center;
     border-radius: 10px;
     color: #fff;
-    background: rgba(91, 0, 46, 0.679);
+    background: rgba(91, 0, 46, 1);
     font-size: 30px;
 }
+
+@keyframes textshit {
+    0%{transform: translateX(0);}
+    40%{transform: translateX(20px);}
+    /* 80%{transform: translateX(40px);} */
+    98%{transform: translateX(100px);}
+    99%{transform: translateX(0);
+        filter: blur(5px);
+    }
+    100%{transform: translateX(0);}
+    /* 100%{transform: translateX(0);} */
+}
+
+
 
 .subscription .close{
     cursor: pointer;
