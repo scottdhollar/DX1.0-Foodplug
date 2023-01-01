@@ -1594,6 +1594,19 @@ footer button:hover {
     .about-image-holder.show{
         transform: translateY(0);
     }
+
+    .counter.hidden.i{
+        transition-delay: 0.5s;
+    }
+    .counter.hidden.ii{
+        transition-delay: 1s;
+    }
+    .counter.hidden.iii{
+        transition-delay: 1.5s;
+    }
+    .counter.hidden.iv{
+        transition-delay: 2s;
+    }
     
     
 }
