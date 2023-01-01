@@ -686,6 +686,9 @@ body {
 }
 
 .counter h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
 }
 

@@ -38,6 +38,29 @@ function helen(){
     const hiddenElementsii = document.querySelectorAll('.navm');
     hiddenElementsii.forEach((el) => observerii.observe(el));
 
+    // running numbers
+
+var num = document.querySelectorAll(".num")
+
+num.forEach(norm =>{
+    norm.textContent = Math.ceil(parseInt(norm.dataset.val)/100) 
+    
+    const intervalId = setInterval(function(){
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        norm.textContent++
+        if (norm.textContent >= parseInt(norm.dataset.val)){
+            clearInterval(intervalId)
+            norm.textContent = parseInt(norm.dataset.val) 
+        } 
+    }, parseInt(norm.dataset.interval))
+})
 }
 
 // const observer = new IntersectionObserver((entries) => {
