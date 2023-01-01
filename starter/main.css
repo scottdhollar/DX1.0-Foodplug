@@ -1607,6 +1607,14 @@ footer button:hover {
     .counter.hidden.iv{
         transition-delay: 2s;
     }
+
+    .counter.hidden{
+        filter: blur(5px);
+    }
+
+    .counter.show{
+        filter: blur(0);
+    }
     
     
 }
