@@ -2069,6 +2069,8 @@ footer button:hover {
     .mobile-link-holder{
         /* height: 70vh !important; */
         overflow: scroll;
+        border-bottom: 2px solid rgba(45, 0, 0, 0.751);
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.216);
     }
 
     .mobile-link-holder::-webkit-scrollbar{
