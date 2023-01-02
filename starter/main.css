@@ -1821,6 +1821,7 @@ footer button:hover {
     z-index: 1;
     transition: all 1s ease;
     display: none;
+    /* overflow: hidden; */
 }
 
 @media screen and (max-width:600px) {
@@ -1837,8 +1838,9 @@ footer button:hover {
     color: #fff;
     background: transparent;
     border-radius: 50%;
+    overflow: hidden;
     /* left: -200px; */
-    /* box-shadow: 0px 0px 10px #000; */
+    box-shadow: 0px 0px 10px #000a;
     gap: 30px;
     height: 200px;
     width: 200px;
@@ -1907,6 +1909,18 @@ footer button:hover {
     background: #fff;
     color: var(--main-color);
     border-color: transparent;
+    scale: 1.05;
+    box-shadow: 0px 0px 50px #0005;
+}
+
+.chat-with-me-semicircle div:hover i{
+    animation: bgrex 1s ease forwards;
+}
+
+@keyframes bgrex {
+    /* 0%{filter: blur(0px);} */
+    0%{filter: blur(5px);}
+    100%{filter: blur(0px);}
 }
 
 .chat-with-me-semicircle .whatsapp{
