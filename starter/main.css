@@ -1808,8 +1808,8 @@ footer button:hover {
 
 .chat-with-me{
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    top: 20vh;
+    right: -30px;
     color: #fff;
     height: 60px;
     width: 60px;
@@ -1850,7 +1850,7 @@ footer button:hover {
 }
 
 .chat-with-me:hover{
-    transform: translate(-100px, -100px);
+    transform: translate(-50vw, 50px);
 }
 
 .chat-with-me:hover .chat-with-me-semicircle{
@@ -1929,6 +1929,7 @@ footer button:hover {
     align-items: center;
     cursor: pointer;
     transition: all 0.5s ease;
+    opacity: 0.4;
 }
 
 .chat-with-me .oval:hover{
