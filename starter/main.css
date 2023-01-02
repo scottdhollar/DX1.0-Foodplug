@@ -1890,7 +1890,7 @@ footer button:hover {
     position: absolute;
     width: 50px;
     /* background: var(--main-color); */
-    /* opacity: 0.8; */
+    opacity: 0;
     color: #fff;
     height: 50px;
     /* scale: ; */
@@ -1901,7 +1901,7 @@ footer button:hover {
     border-radius: 50%;
     z-index: 1;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     /* padding: 10px; */
 }
 
@@ -1925,18 +1925,27 @@ footer button:hover {
 
 .chat-with-me-semicircle .whatsapp{
     top: 5px;
+    transform: translateY(-50px);
 }
 
 .chat-with-me-semicircle .twitter{
+    transform: translateY(50px);
     bottom: 5px;
 }
 
 .chat-with-me-semicircle .discordd{
+    transform: translateX(-50px);
     left: 5px;
 }
 
 .chat-with-me-semicircle .instagram{
+    transform: translateX(50px);
     right: 5px;
+}
+
+.chat-with-me:hover .chat-with-me-semicircle div{
+    transform: none;
+    opacity: 1;
 }
 
 .chat-with-me .oval{
