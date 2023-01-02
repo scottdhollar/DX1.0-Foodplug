@@ -2067,7 +2067,7 @@ footer button:hover {
     }
 
     .mobile-link-holder{
-        height: 70vh !important;
+        /* height: 70vh !important; */
         overflow: scroll;
     }
 
