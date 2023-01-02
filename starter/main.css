@@ -1962,8 +1962,8 @@ footer button:hover {
     background: var(--main-color);
     box-shadow: 0px 0px 10px #0008;
     display: flex;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
