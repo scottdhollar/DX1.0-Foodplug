@@ -1934,21 +1934,21 @@ footer button:hover {
 
 .chat-with-me-semicircle .whatsapp{
     top: 5px;
-    transform: translateY(-50px);
+    transform: translateY(-100px);
 }
 
 .chat-with-me-semicircle .twitter{
-    transform: translateY(50px);
+    transform: translateY(100px);
     bottom: 5px;
 }
 
 .chat-with-me-semicircle .discordd{
-    transform: translateX(-50px);
+    transform: translateX(-100px);
     left: 5px;
 }
 
 .chat-with-me-semicircle .instagram{
-    transform: translateX(50px);
+    transform: translateX(100px);
     right: 5px;
 }
 
