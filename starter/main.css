@@ -1956,7 +1956,9 @@ footer button:hover {
 
 .chat-with-me-semicircle div:hover{
     color: var(--main-color) !important;
-    border: 2px solid transparent;
+    border: 2px solid transparent !important;
+    /* width: 55px ;
+    height: 55px; */
     scale: 1.05;
     background: #fff;
     box-shadow: 0px 0px 70px #0008;
