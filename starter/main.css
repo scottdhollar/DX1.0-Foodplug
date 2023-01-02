@@ -205,7 +205,19 @@ body {
     background: rgba(255, 255, 255, 0.8);
     position: relative;
     border-radius: 7px;
+    background: transparent;
     /* transform: scaleX(0); */
+}
+
+.hamburger::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 7px;
+    transition: all 1.5s ease;
+    transition-delay: 1s;
 }
 
 /* .menu:hover {
@@ -230,6 +242,18 @@ body {
     transform: translateY(-10px);
 }
 
+/* . {
+    content: "";
+    width: 28px;
+    height: 4px;
+    transition-delay: 1s;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease;
+    position: absolute;
+    transform: translateY(0);
+} */
+
 .menu::after {
     content: "";
     width: 28px;
@@ -249,6 +273,12 @@ body {
     z-index: 7;
     /* rotate: 360deg; */
     /* transition: all 3s ease; */
+}
+
+.showburger::before{
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+    opacity: 0;
 }
 
 .showburger .menu {
