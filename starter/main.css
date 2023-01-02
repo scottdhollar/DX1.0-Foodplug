@@ -1823,7 +1823,7 @@ footer button:hover {
     display: none;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .chat-with-me{
         display: flex;
     }
@@ -1864,9 +1864,9 @@ footer button:hover {
     width: 80px;
     height: 80px;
     border: 65px solid rgba(154, 48, 85, 0.576);
-    border: 65px solid #a82d4ad8;
+    border: 65px solid #a82d4af6;
     /* opacity: 0.8; */
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     box-shadow: 0px 0px 10px #000a inset, 0px 0px 10px #0006;
     /* background: var(--main-color); */
     border-radius: 50%;
