@@ -457,6 +457,16 @@ body {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
      */
      opacity: 0.2;
+     filter: blur(5px);
+}
+
+@media screen and (max-width: 800px) {
+    .chn img, .rus img, .ukr img{
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+         */
+         opacity: 0.2;
+         filter: blur(0);
+    }
 }
 
 
@@ -571,13 +581,14 @@ body {
     /* transform: translateY(-300px); */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     padding: 10px;
     /* background: var(--main-color); */
     height: 0px;
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
     top: 40px;
 }
 
@@ -1595,28 +1606,29 @@ footer button:hover {
         transform: translateY(0);
     }
 
-    .counter.hidden.i{
-        transition-delay: 0.5s;
-    }
-    .counter.hidden.ii{
-        transition-delay: 1s;
-    }
-    .counter.hidden.iii{
-        transition-delay: 1.5s;
-    }
-    .counter.hidden.iv{
-        transition-delay: 2s;
-    }
-
-    .counter.hidden{
-        filter: blur(5px);
-    }
-
-    .counter.show{
-        filter: blur(0);
-    }
     
     
+}
+
+.counter.hidden.i{
+    transition-delay: 0.5s;
+}
+.counter.hidden.ii{
+    transition-delay: 1s;
+}
+.counter.hidden.iii{
+    transition-delay: 1.5s;
+}
+.counter.hidden.iv{
+    transition-delay: 2s;
+}
+
+.counter.hidden{
+    filter: blur(5px);
+}
+
+.counter.show{
+    filter: blur(0);
 }
 
 .subscription-backdrop{
@@ -2018,17 +2030,23 @@ header,main{
 }
 
 body::-webkit-scrollbar{
-    width: 10px;
+    width: 8px;
     background: rgba(229, 9, 9, 0);
 }
 
 
 body::-webkit-scrollbar-thumb{
-    border-radius: 0.5em;
+    /* border-radius: 0.5em; */
     -webkit-transition: all 1s ease;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
     background: rgba(108, 5, 38, 0.8);
 }
+
+/* body::-webkit-scrollbar-button{
+    height: 10vh;
+    background: transparent;
+    background: rgba(255, 0, 0, 0.171);
+} */
 
 body::-webkit-scrollbar-thumb:hover{
     background: rgba(62, 3, 22, 1);
@@ -2036,6 +2054,6 @@ body::-webkit-scrollbar-thumb:hover{
 }
 
 body::-webkit-scrollbar-track{
-    background: rgba(255, 0, 0, 0.171);
+    background: rgba(255, 0, 0, 0.15);
 }
 
