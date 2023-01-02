@@ -1830,7 +1830,21 @@ footer button:hover {
 }
 
 .chat-with-me.show{
-    scale: 1;
+    scale: 0;
+    opacity: 0;
+    animation: chatshow 5s ease forwards;
+}
+
+@keyframes chatshow {
+    0%{}
+    70%{
+        opacity: 0;
+        scale: 0;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 @media screen and (max-width:600px) {
