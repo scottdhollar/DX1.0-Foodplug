@@ -1405,13 +1405,14 @@ footer button:hover {
     }
 }
 
+
 /* .mobile-true{
     display: none;
 } */
 
 .landscape-mobile{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: 110;
     background: tomato;
@@ -1450,7 +1451,7 @@ footer button:hover {
     100%{transform: rotate(90deg);}
 }
 
-@media screen and (max-height:400px) {
+@media screen and (max-height:300px) {
     .mobile-true header, .mobile-true main{
         display: none;
     }
@@ -2046,6 +2047,25 @@ footer button:hover {
     }
 }
 
+@media screen and (max-height: 670px){
+    .language, .langs{
+        display: none;
+    }
+
+    .chat-with-me{
+        display: none;
+    }
+
+    .scroll-down .nav-mobile{
+        position: fixed !important;
+        transform: none !important;
+    }
+
+    .scroll-up .nav-mobile{
+        position: fixed !important;
+        transform: none !important;
+    }
+}
 
 
 
