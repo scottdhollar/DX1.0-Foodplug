@@ -1944,26 +1944,22 @@ footer button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgba(81, 6, 6, 0.221);
+    border: 2px double rgba(81, 6, 6, 0.221);
     border-radius: 50%;
     z-index: 1;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     font-size: 23px;
     font-weight: bolder;
     /* padding: 10px; */
 }
 
 .chat-with-me-semicircle div:hover{
-    color: var(--main-color);
-    border-color: transparent;
+    color: var(--main-color) !important;
+    border: 2px solid transparent;
     scale: 1.05;
     background: #fff;
-    box-shadow: 0px 0px 50px #0005;
-}
-
-.chat-with-me-semicircle div:hover i{
-    animation: bgrex 0.25s ease forwards;
+    box-shadow: 0px 0px 70px #0008;
 }
 
 @keyframes bgrex {
