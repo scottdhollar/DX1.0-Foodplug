@@ -1935,7 +1935,7 @@ footer button:hover {
 .chat-with-me .oval i{
     position: relative;
     /* left: -11px; */
-    transition: all 2s ease;
+    transition: all 1s ease;
     font-size: 15px;
     transform: translateX(-11px);
 }
