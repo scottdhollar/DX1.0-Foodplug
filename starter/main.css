@@ -1808,7 +1808,7 @@ footer button:hover {
 
 .chat-with-me{
     position: fixed;
-    top: 20vh;
+    top: 25vh;
     right: -30px;
     color: #fff;
     height: 60px;
@@ -1921,7 +1921,7 @@ footer button:hover {
 }
 
 .chat-with-me-semicircle div:hover i{
-    animation: bgrex 0.5s linear forwards;
+    animation: bgrex 0.25s ease forwards;
 }
 
 @keyframes bgrex {
