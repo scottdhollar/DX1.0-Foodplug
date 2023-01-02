@@ -1845,12 +1845,11 @@ footer button:hover {
     gap: 30px;
     height: 200px;
     width: 200px;
-    opacity: 0;
     /* flex-wrap: wrap; */
     padding: 20px;
     z-index: -1;
     scale: 0;
-    transition: all 0.7s ease;
+    transition: all 0.7s linear;
 }
 
 .chat-with-me:hover{
@@ -1859,7 +1858,6 @@ footer button:hover {
 
 .chat-with-me:hover .chat-with-me-semicircle{
     scale: 1;
-    opacity: 1;
     height: 200px;
     width: 200px;
     transform: rotate(360deg);
