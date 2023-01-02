@@ -1831,7 +1831,6 @@ footer button:hover {
 
 .chat-with-me.show{
     scale: 1;
-    transition-delay: 3s;
 }
 
 @media screen and (max-width:600px) {
