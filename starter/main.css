@@ -217,7 +217,7 @@ body {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 7px;
     transition: all 1.5s ease;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 
 /* .menu:hover {
