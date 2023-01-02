@@ -1932,8 +1932,21 @@ footer button:hover {
     opacity: 0.4;
 }
 
+.chat-with-me .oval i{
+    position: relative;
+    /* left: -11px; */
+    transition: all 2s ease;
+    font-size: 15px;
+    transform: translateX(-11px);
+}
+
 .chat-with-me .oval:hover{
     opacity: 0;
+}
+
+.chat-with-me .oval:hover i{
+    opacity: 0;
+    transform: translateX(0);
 }
 
 
