@@ -1824,28 +1824,6 @@ footer button:hover {
     /* overflow: hidden; */
 }
 
-.chat-with-me.hidden{
-    transform: none;
-    scale: 0;
-}
-
-.chat-with-me.show{
-    scale: 0;
-    opacity: 0;
-    animation: chatshow 5s ease forwards;
-}
-
-@keyframes chatshow {
-    0%{}
-    70%{
-        opacity: 0;
-        scale: 0;
-    }
-    100%{
-        opacity: 1;
-        scale: 1;
-    }
-}
 
 @media screen and (max-width:600px) {
     .chat-with-me{
@@ -1871,7 +1849,7 @@ footer button:hover {
     padding: 20px;
     z-index: -1;
     scale: 0;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 
 .chat-with-me:hover{
@@ -1915,8 +1893,10 @@ footer button:hover {
     /* background: var(--main-color); */
     opacity: 0;
     color: #fff;
+    /* background: #fff; */
+    /* color: var(--main-color); */
     height: 50px;
-    /* scale: ; */
+    scale: 0.9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1925,6 +1905,8 @@ footer button:hover {
     z-index: 1;
     cursor: pointer;
     transition: all 1s ease;
+    font-size: 23px;
+    font-weight: bolder;
     /* padding: 10px; */
 }
 
