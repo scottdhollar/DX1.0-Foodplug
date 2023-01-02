@@ -1906,19 +1906,11 @@ footer button:hover {
 }
 
 .chat-with-me-semicircle div:hover{
+    color: var(--main-color);
     border-color: transparent;
+    scale: 1.05;
+    background: #fff;
     box-shadow: 0px 0px 50px #0005;
-    animation: bgrexx 1s ease forwards;
-}
-
-@keyframes bgrexx {
-    /* 0%{filter: blur(0px);} */
-    0%{}
-    100%{
-        scale: 1.05;
-        color: var(--main-color);
-        background: #fff;
-    }
 }
 
 .chat-with-me-semicircle div:hover i{
