@@ -2065,6 +2065,16 @@ footer button:hover {
         position: fixed !important;
         transform: none !important;
     }
+
+    .mobile-link-holder{
+        height: 70vh !important;
+        overflow: scroll;
+    }
+
+    .mobile-link-holder::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
 }
 
 
