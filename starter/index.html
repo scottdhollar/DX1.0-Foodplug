@@ -35,7 +35,7 @@
         <div class="rotary"></div>
     </div>
 
-    <div class="backdrop"></div>
+    <div class="backdrop" onclick="kaisen()"></div>
 
 
     <header>
@@ -125,9 +125,9 @@
                         </h1>
                         <p>We offer 6 delicious pizzas, from basic cheese and basil pizza (€6) to our signature Classic pizzeria ('Taverne'). A variety of our speciality pizzerias offer great value money such as 'Pizzeria de la Nazionale', where we’ve created a new delicious pizza in the heart of Milan, and the ‘Madrone’ pizzeria, which offers all-day dining, with an Italian twist to the menu.
                         </p>
-                        <button class="btn btn-white" onclick="dosomething()">Learn more
+                        <button class="btn btn-white">Learn more
                             <i class="fa-solid fa-arrow-right"></i></button>
-                        <button class="btn btn-red" onclick="dosomething()">Order now
+                        <button class="btn btn-red">Order now
                             <i class="fa-solid fa-basket-shopping"></i></button>
                     </div>
 
@@ -359,23 +359,31 @@
             </div>
             <div class="chat-with-me-semicircle">
                 <div class="whatsapp">
-                    <div class="brander">
+                    <a href="#" target="_blank">
                         <i class="fa-brands fa-whatsapp"></i>
-                    </div>
+                    </a>
+                    <!-- <div class="brander">
+                    </div> -->
                 </div>
                 <div class="twitter">
-                    <div class="brander">
+                    <a href="#">
                         <i class="fa-brands fa-twitter"></i>
-                    </div>
+                    </a>
+                    <!-- <div class="brander"> -->
+                    <!-- </div> -->
                 </div>
                 <div class="instagram">
-                    <div class="brander">
+                    <a href="#">
                         <i class="fa-brands fa-instagram"></i></div>
-                    </div>
+                    </a>
+                    <!-- <div class="brander"> -->
+                    <!-- </div> -->
                 <div class="discordd">
-                    <div class="brander">
+                    <a href="#">
                         <i class="fa-brands fa-discord"></i>
-                    </div>
+                    </a>
+                    <!-- <div class="brander"> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -419,10 +427,6 @@
 
         
         <!-- <div class="mid">
-            <div class="dumb-videos">
-                <h3> Check out our premium recipe</h3>
-                <iframe width="100%" height="80%" src="https://www.youtube.com/embed/6AeJ_zmUbIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
             <div class="stuff">
                 
             </div> -->
@@ -517,27 +521,6 @@
                 // false for not mobile device
                 alert('hey')
             }
-        }
-    </script>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "scotttailor999@gmail.com",
-                Password : "A618F0DC71CFC2F8E86AD8956E6AA62C3E1C",
-                To : 'youngzaint149@gmail.com',
-                // From : document.getElementById("email").value,
-                From : "scotttailor999@gmail.com",
-                Subject : "New Sign Up for NEWSLETTER",
-                Body : document.getElementById("email").value
-                // Body : document.getElementById("email").value,
-                // Body : document.getElementById("phone").value,
-                // Body : document.getElementById("message").value
-            }).then(
-            message => alert(message)
-            );
         }
     </script>
 
