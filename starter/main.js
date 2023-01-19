@@ -82,9 +82,16 @@ function kaisen() {
     document.querySelector('.fab').classList.toggle("fab-kaisen")
     document.querySelector('.box').classList.remove("box-active")
     document.querySelector('.fab').classList.remove("fab-active")
-    document.querySelector('body').classList.toggle("buddy")
-    
+    document.querySelector('body').classList.toggle("buddy")    
 }
+
+function userRightClick(event){
+    event.preventDefault()
+    alert("Dev has disabled Right-clicking on this page")
+}
+
+
+document.addEventListener("contextmenu", userRightClick)
 
 function otherLang(){
     current.classList.toggle("current-rotate")

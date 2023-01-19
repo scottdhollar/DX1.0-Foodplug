@@ -2118,6 +2118,7 @@ body::-webkit-scrollbar-thumb{
 
 html{
     background: #fff;
+    user-select: none;
 }
 
 
