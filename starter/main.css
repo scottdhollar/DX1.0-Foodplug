@@ -1657,14 +1657,6 @@ footer button:hover {
     transition-delay: 2s;
 }
 
-.counter.hidden{
-    filter: blur(5px);
-}
-
-.counter.show{
-    filter: blur(0);
-}
-
 .subscription-backdrop{
     width: 100vw;
     height: 100vh;
@@ -2096,10 +2088,11 @@ footer button:hover {
 
 
 
-header,main{
+body{
     max-width: 1500px;
     /* visibility:; */
     margin: 0 auto;
+    /* opacity: 0.2; */
     /* display: none; */
 }
 
@@ -2130,4 +2123,5 @@ body::-webkit-scrollbar-thumb:hover{
 body::-webkit-scrollbar-track{
     background: rgba(255, 0, 0, 0.15);
 }
+
 
